@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page page--main" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Мишка - главная страница</title>
@@ -8,7 +8,7 @@
     <header class="page-header">
       <nav class="main-navigation main-navigation--opened">
         <a class="page-header__logo">
-          <img src="https://via.placeholder.com/85.97x34.92" width="85.97" height="34.92" alt="Мишка - магазин вязаных изделий">
+          <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишка - магазин вязаных изделий">
         </a>
         <button class="main-navigation__toggle" type="button" aria-label="Открыть меню">
         </button>
@@ -41,7 +41,7 @@
     <main class="page-main">
       <!-- Общая обертка контента -->
       <div class="page-main__wrapper">
-        <!-- Раздел витрины -->
+        <!-- Раздел витрины шапки -->
         <section class="showcase-window">
           <h1>Милые штуки ручной работы для дома</h1>
           <img src="https://via.placeholder.com/575x373" width="575" height="373" alt="Витрина наших изделий: вязаные игрушки, корзинки">
@@ -102,13 +102,22 @@
             <h2>Отзывы</h2>
             <div class="review__slider">
               <ul class="review__list">
-                <li class="review__item">
+                <li class="review__item review__item--current">
                   <blockquote>
                     <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
                   </blockquote>
                   <cite>
                     Анастасия Красильникова
                     <span>@misssssiskras</span>
+                  </cite>
+                </li>
+                <li class="review__item visually-hidden">
+                  <blockquote>
+                    <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                  </blockquote>
+                  <cite>
+                    Екатерина Красильникова
+                    <span>@misssssiskras2</span>
                   </cite>
                 </li>
               </ul>
@@ -137,13 +146,13 @@
             </div>
           </div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6132732513884!2d30.322197290665613!3d59.93871048347301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602604344933!5m2!1sru!2sru"
-          width="320" height="454.16" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-          <a class="contacts__write-us" href="#" aria-label="Открыть форму обратной связи">Напишите нам</button>
+          width="320" height="454" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+          <a class="contacts__write-us" href="#" aria-label="Открыть форму обратной связи">Напишите нам</a>
         </section>
       </div>
     </main>
     <footer class="page-footer">
-      <img class="visually-hidden" src="https://via.placeholder.com/101.74x34" width="101.74" height="34" alt="Логотип магазина Мишка">
+      <img class="visually-hidden" src="https://via.placeholder.com/102x34" width="102" height="34" alt="Логотип магазина Мишка">
       <ul class="socials__list">
         <li>
           <a class="socials__item" href="#"><img src="https://via.placeholder.com/22x21" width="22" height="21" alt="Наш Instagram"></a>
@@ -158,8 +167,9 @@
       <div class="footer__developers">
         <span>Разработано</span>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/26.9x34.1" width="26.9" height="34.1" alt="Перейти на сайт HTML Academy">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Перейти на сайт HTML Academy">
         </a>
+      </div>
     </footer>
     <!-- Модальные окна -->
     <section class="modal modal-cart">
@@ -169,15 +179,15 @@
         <fieldset class="cart-form__sizes sizes-checkbox">
           <ul class="cart-form__size-list">
             <li class="size-list__item">
-              <input class="visualli-hidden" type="checkbox" name="S" id="size-S" checked>
+              <input class="visually-hidden" type="checkbox" name="S" id="size-S" checked>
               <label for="size-S">S</label>
             </li>
             <li class="size-list__item">
-              <input class="visualli-hidden" type="checkbox" name="M" id="size-M">
+              <input class="visually-hidden" type="checkbox" name="M" id="size-M">
               <label for="size-M">M</label>
             </li>
             <li class="size-list__item">
-              <input class="visualli-hidden" type="checkbox" name="L" id="size-L">
+              <input class="visually-hidden" type="checkbox" name="L" id="size-L">
               <label for="size-L">L</label>
             </li>
           </ul>
