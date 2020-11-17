@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="page page--catalog" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мишка - Каталог</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-navigation main-navigation--opened">
+        <a class="page-header__logo" href="index.html">
+          <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишка - магазин вязаных изделий">
+        </a>
+        <button class="main-navigation__toggle" type="button" aria-label="Открыть меню">
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="#">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">
+              <img src="https://via.placeholder.com/18x18" width="18" height="18" alt="Иконка поиска">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">
+              <img src="https://via.placeholder.com/21x18" width="21" height="18" alt="Иконка корзины">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1>Каталог товаров</h1>
+      <div class="catalog__wrapper">
+        <!-- Раздел каталога -->
+        <section class="catalog">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="#">
+                <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Белый высокий заяц в синей одежде">
+              </a>
+              <a href="#">
+                <h2 class="catalog__title catalog__title--merch">Зайчик-попрыгайчик</h2>
+              </a>
+              <p class="catalog__item-parameters">Рост 30 см, вес 200 г</p>
+              <div class="catalog__item-price">
+                <b>1 200 руб.</b>
+                <img src="https://via.placeholder.com/20x19" width="20" height="19" alt="Иконка корзины">
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="#">
+                <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Бело-оранжевая вязаная корзинка">
+              </a>
+              <a href="#">
+                <h2 class="catalog__title catalog__title--merch">Корзинка для белья</h2>
+              </a>
+              <p class="catalog__item-parameters">Диаметр 15 см, высота 10 см</p>
+              <div class="catalog__item-price">
+                <b>690 руб.</b>
+                <img src="https://via.placeholder.com/20x19" width="20" height="19" alt="Иконка корзины">
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a href="#">
+                <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Высокая вязаная бело-зеленая корзинка с кучей игрушек">
+              </a>
+              <a href="#">
+                <h2 class="catalog__title catalog__title--merch">Большая корзинкадля игрушек</h2>
+              </a>
+              <p class="catalog__item-parameters">Диаметр 30 см, высота 30 см</p>
+              <div class="catalog__item-price">
+                <b>1 500 руб.</b>
+                <img src="https://via.placeholder.com/20x19" width="20" height="19" alt="Иконка корзины">
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- Раздел с видео -->
+        <section class="video">
+          <div class="video__title">
+            <img src="https://via.placeholder.com/32x22" width="32" height="22" alt="Иконка камеры">
+            <h2 class="catalog__title catalog__title--video">Процесс производства</h2>
+          </div>
+          <!-- Блок с видео -->
+          <video width="260" height="150" controls="controls" poster="https://via.placeholder.com/260x150">
+          </video>
+          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="border-button" href="#">Сделать заказ</button>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="visually-hidden" src="https://via.placeholder.com/102x34" width="102" height="34" alt="Мишка - главная страница">
+      </a>
+      <ul class="socials__list">
+        <li>
+          <a class="socials__item socials__item--instagram" href="#"><img src="https://via.placeholder.com/22x21" width="22" height="21" alt="Наш Instagram"></a>
+        </li>
+        <li>
+          <a class="socials__item socials__item--facebook" href="#"><img src="https://via.placeholder.com/15x28" width="15" height="28" alt="Наш Facebook"></a>
+        </li>
+        <li>
+          <a class="socials__item socials__item--twitter" href="#"><img src="https://via.placeholder.com/23x20" width="23" height="20" alt="Наш Twitter"></a>
+        </li>
+      </ul>
+      <div class="footer__developers">
+        <b>Разработано</b>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Перейти на сайт HTML Academy">
+        </a>
+      </div>
+    </footer>
+    <!-- Модальные окна -->
+    <section class="modal modal-cart">
+      <h3>Добавить в корзину</h3>
+      <p>Выберите размер</p>
+      <form class="cart-form" method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset class="cart-form__sizes sizes-checkbox">
+          <ul class="cart-form__size-list">
+            <li class="size-list__item">
+              <input class="visually-hidden" type="checkbox" name="S" id="size-S" checked>
+              <label class="size-list__item-label" for="size-S">S</label>
+            </li>
+            <li class="size-list__item">
+              <input class="visually-hidden" type="checkbox" name="M" id="size-M">
+              <label class="size-list__item-label" for="size-M">M</label>
+            </li>
+            <li class="size-list__item">
+              <input class="visually-hidden" type="checkbox" name="L" id="size-L">
+              <label class="size-list__item-label" for="size-L">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="cart-form__add" type="submit">Добавить</button>
+      </form>
+    </section>
+  </body>
+</html>
