@@ -40,7 +40,7 @@
     </header>
     <main class="page-main">
       <h1>Каталог товаров</h1>
-      <div class="catalog__wrapper">
+      <div class="catalog__wrapper wrapper">
         <!-- Раздел каталога -->
         <section class="catalog">
           <ul class="catalog__list">
@@ -49,7 +49,7 @@
                 <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Белый высокий заяц в синей одежде">
               </a>
               <a href="#">
-                <h2 class="catalog__title catalog__title--merch">Зайчик-попрыгайчик</h2>
+                <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
               </a>
               <p class="catalog__item-parameters">Рост 30 см, вес 200 г</p>
               <div class="catalog__item-price">
@@ -62,7 +62,7 @@
                 <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Бело-оранжевая вязаная корзинка">
               </a>
               <a href="#">
-                <h2 class="catalog__title catalog__title--merch">Корзинка для белья</h2>
+                <h2 class="catalog__title">Корзинка для белья</h2>
               </a>
               <p class="catalog__item-parameters">Диаметр 15 см, высота 10 см</p>
               <div class="catalog__item-price">
@@ -75,7 +75,7 @@
                 <img src="https://via.placeholder.com/260x195" width="260" height="195" alt="Высокая вязаная бело-зеленая корзинка с кучей игрушек">
               </a>
               <a href="#">
-                <h2 class="catalog__title catalog__title--merch">Большая корзинкадля игрушек</h2>
+                <h2 class="catalog__title">Большая корзинкадля игрушек</h2>
               </a>
               <p class="catalog__item-parameters">Диаметр 30 см, высота 30 см</p>
               <div class="catalog__item-price">
@@ -87,15 +87,18 @@
         </section>
         <!-- Раздел с видео -->
         <section class="video">
-          <div class="video__title">
+          <div class="video__title-block">
             <img src="https://via.placeholder.com/32x22" width="32" height="22" alt="Иконка камеры">
-            <h2 class="catalog__title catalog__title--video">Процесс производства</h2>
+            <h2 class="video__title">Процесс производства</h2>
           </div>
           <!-- Блок с видео -->
-          <video width="260" height="150" controls="controls" poster="https://via.placeholder.com/260x150">
-          </video>
-          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="border-button" href="#">Сделать заказ</button>
+          <div class="video__container">
+            <video width="260" height="150" controls="controls" poster="https://via.placeholder.com/260x150">
+            </video>
+            <button class="video__play" type="button">Play</button>
+            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="border-button" href="#">Сделать заказ</button>
+          </div>
         </section>
       </div>
     </main>
@@ -103,17 +106,19 @@
       <a class="page-footer__logo" href="index.html">
         <img class="visually-hidden" src="https://via.placeholder.com/102x34" width="102" height="34" alt="Мишка - главная страница">
       </a>
-      <ul class="socials__list">
-        <li>
-          <a class="socials__item socials__item--instagram" href="#"><img src="https://via.placeholder.com/22x21" width="22" height="21" alt="Наш Instagram"></a>
-        </li>
-        <li>
-          <a class="socials__item socials__item--facebook" href="#"><img src="https://via.placeholder.com/15x28" width="15" height="28" alt="Наш Facebook"></a>
-        </li>
-        <li>
-          <a class="socials__item socials__item--twitter" href="#"><img src="https://via.placeholder.com/23x20" width="23" height="20" alt="Наш Twitter"></a>
-        </li>
-      </ul>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li>
+            <a class="social__link social__link--instagram" href="#"><img src="https://via.placeholder.com/22x21" width="22" height="21" alt="Наш Instagram"></a>
+          </li>
+          <li>
+            <a class="social__link social__link--instagram" href="#"><img src="https://via.placeholder.com/15x28" width="15" height="28" alt="Наш Facebook"></a>
+          </li>
+          <li>
+            <a class="social__link social__link--instagram" href="#"><img src="https://via.placeholder.com/23x20" width="23" height="20" alt="Наш Twitter"></a>
+          </li>
+        </ul>
+      </div>
       <div class="footer__developers">
         <b>Разработано</b>
         <a href="https://htmlacademy.ru/intensive/adaptive">
@@ -122,23 +127,23 @@
       </div>
     </footer>
     <!-- Модальные окна -->
-    <section class="modal modal-cart">
+    <section class="modal modal--cart">
       <h3>Добавить в корзину</h3>
       <p>Выберите размер</p>
       <form class="cart-form" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset class="cart-form__sizes sizes-checkbox">
           <ul class="cart-form__size-list">
-            <li class="size-list__item">
+            <li class="cart-form__item">
               <input class="visually-hidden" type="checkbox" name="S" id="size-S" checked>
-              <label class="size-list__item-label" for="size-S">S</label>
+              <label class="cart-form__item-label" for="size-S">S</label>
             </li>
-            <li class="size-list__item">
+            <li class="cart-form__item">
               <input class="visually-hidden" type="checkbox" name="M" id="size-M">
-              <label class="size-list__item-label" for="size-M">M</label>
+              <label class="cart-form__item-label" for="size-M">M</label>
             </li>
-            <li class="size-list__item">
+            <li class="cart-form__item">
               <input class="visually-hidden" type="checkbox" name="L" id="size-L">
-              <label class="size-list__item-label" for="size-L">L</label>
+              <label class="cart-form__item-label" for="size-L">L</label>
             </li>
           </ul>
         </fieldset>
