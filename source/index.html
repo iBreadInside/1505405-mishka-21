@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -64,8 +65,8 @@
             <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="best-merch__char-table">
               <tr>
-                <th>Цвет:</th>
-                <th>«Тиффани»/серый</th>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
               </tr>
               <tr>
                 <td>Диаметр:</td>
@@ -148,20 +149,22 @@
       </div>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img class="visually-hidden" src="https://via.placeholder.com/102x34" width="102" height="34" alt="Логотип магазина Мишка">
+      <a class="page-footer__logo" href="index.html">
+        <img class="visually-hidden" src="https://via.placeholder.com/102x34" width="102" height="34" alt="Мишка - главная страница">
       </a>
-      <ul class="socials__list">
-        <li>
-          <a class="socials__item socials__item--instagram" href="#"><img src="https://via.placeholder.com/22x21" width="22" height="21" alt="Наш Instagram"></a>
-        </li>
-        <li>
-          <a class="socials__item socials__item--facebook" href="#"><img src="https://via.placeholder.com/15x28" width="15" height="28" alt="Наш Facebook"></a>
-        </li>
-        <li>
-          <a class="socials__item socials__item--twitter" href="#"><img src="https://via.placeholder.com/23x20" width="23" height="20" alt="Наш Twitter"></a>
-        </li>
-      </ul>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li>
+            <a class="social__link social__link--instagram" href="#"><img src="https://via.placeholder.com/22x21" width="22" height="21" alt="Наш Instagram"></a>
+          </li>
+          <li>
+            <a class="social__link social__link--instagram" href="#"><img src="https://via.placeholder.com/15x28" width="15" height="28" alt="Наш Facebook"></a>
+          </li>
+          <li>
+            <a class="social__link social__link--instagram" href="#"><img src="https://via.placeholder.com/23x20" width="23" height="20" alt="Наш Twitter"></a>
+          </li>
+        </ul>
+      </div>
       <div class="footer__developers">
         <b>Разработано</b>
         <a href="https://htmlacademy.ru/intensive/adaptive">
@@ -170,23 +173,23 @@
       </div>
     </footer>
     <!-- Модальные окна -->
-    <section class="modal modal-cart">
+    <section class="modal modal--cart">
       <h3>Добавить в корзину</h3>
       <p>Выберите размер</p>
       <form class="cart-form" method="GET" action="https://echo.htmlacademy.ru">
         <fieldset class="cart-form__sizes sizes-checkbox">
           <ul class="cart-form__size-list">
-            <li class="size-list__item">
+            <li class="cart-form__item">
               <input class="visually-hidden" type="checkbox" name="S" id="size-S" checked>
-              <label for="size-S">S</label>
+              <label class="cart-form__item-label" for="size-S">S</label>
             </li>
-            <li class="size-list__item">
+            <li class="cart-form__item">
               <input class="visually-hidden" type="checkbox" name="M" id="size-M">
-              <label for="size-M">M</label>
+              <label class="cart-form__item-label" for="size-M">M</label>
             </li>
-            <li class="size-list__item">
+            <li class="cart-form__item">
               <input class="visually-hidden" type="checkbox" name="L" id="size-L">
-              <label for="size-L">L</label>
+              <label class="cart-form__item-label" for="size-L">L</label>
             </li>
           </ul>
         </fieldset>
