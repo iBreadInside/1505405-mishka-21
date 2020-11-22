@@ -1,0 +1,38 @@
+.review {
+  padding-bottom: 45px;
+}
+
+.review__item blockquote {
+  color: $basic-black;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.review__item cite {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.review__item a {
+  color: $basic-black;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.slider__button-block {
+  margin-bottom: 38px;
+}
+
+.review__slider-button {
+  background-color: white;
+  border: 1px solid $basic-border;
+  margin: 0;
+  display: block;
+}
+
+.review__to-write {
+  padding: 16px 65px;
+}

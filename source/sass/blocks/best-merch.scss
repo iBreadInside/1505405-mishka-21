@@ -1,0 +1,41 @@
+.best-merch {
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
+.best-merch__subtitle {
+  color: $basic-aqua;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.best-merch__char-table {
+  margin-bottom: 28px;
+  color: $basic-black;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.best-merch__char-table tr {
+  border-bottom: 1px solid $basic-border;
+  display: block;
+}
+
+.best-merch__wrapper p {
+  color: $basic-black;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.best-merch__cost {
+  color: $basic-black;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.best-merch__buy {
+  padding: 16px 70px;
+}

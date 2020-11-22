@@ -1,0 +1,28 @@
+.contacts {
+  padding-top: 38px;
+  padding-bottom: 39px;
+}
+
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__items p,
+.contacts__items a {
+  color: $basic-black;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts__items a {
+  border-bottom: 1px solid $line-aqua;
+}
+
+.contacts iframe {
+  margin-bottom: 42px;
+}
+
+.contacts__write-us {
+  padding: 16px 38px;
+}
