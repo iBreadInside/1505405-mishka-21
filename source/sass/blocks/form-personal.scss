@@ -26,21 +26,18 @@
   box-sizing: border-box;
   padding-top: 17px;
   padding-bottom: 17px;
-}
-
-.write-area {
-  padding-top: 0;
-}
-
-.form-name__item,
-.write-area {
   margin-bottom: 34.5px;
+
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
     color: black;
     opacity: 0.3;
   }
+}
+
+.write-area {
+  padding-top: 0;
 }
 
 .form-comments__text {
@@ -50,6 +47,7 @@
   display: block;
   box-sizing: border-box;
   margin-bottom: 17px;
+
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
