@@ -1,0 +1,25 @@
+.form-main {
+  padding-bottom: 55px;
+}
+
+.form fieldset {
+  border: 0;
+  border-top: 1px solid $basic-aqua;
+}
+
+.legend {
+  color: $basic-aqua;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  padding-left: 61px;
+}
