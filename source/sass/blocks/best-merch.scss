@@ -4,7 +4,7 @@
 }
 
 .best-merch__subtitle {
-  color: $basic-aqua;
+  color: $aqua;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
@@ -13,24 +13,24 @@
 
 .best-merch__char-table {
   margin-bottom: 28px;
-  color: $basic-black;
+  color: $black-color;
   font-size: 15px;
   line-height: 20px;
 }
 
 .best-merch__char-table tr {
-  border-bottom: 1px solid $basic-border;
+  border-bottom: 1px solid $border-color;
   display: block;
 }
 
 .best-merch__wrapper p {
-  color: $basic-black;
+  color: $black-color;
   font-size: 15px;
   line-height: 24px;
 }
 
 .best-merch__cost {
-  color: $basic-black;
+  color: $black-color;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;

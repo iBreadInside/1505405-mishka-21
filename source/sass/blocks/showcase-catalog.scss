@@ -1,14 +1,14 @@
 .showcase-catalog__list {
   display: flex;
   flex-direction: column;
-  background-color: $basic-aqua;
+  background-color: $aqua;
 }
 
 .showcase-catalog__item {
-  background-color: $basic-aqua;
+  background-color: $aqua;
 
   &--darker {
-    background-color: $darker-aqua;
+    background-color: $aqua--darker;
   }
   margin: 0;
   padding-top: 24px;
