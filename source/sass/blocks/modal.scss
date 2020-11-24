@@ -10,7 +10,7 @@
   height: 100%;
   // display: flex;
   align-items: center;
-  background-color: $modal-background;
+  background-color: $white-opacity90;
   display: none;
 }
 
@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   border-top: 1px solid $grey-color;
-  box-shadow: 0 10px 5px 0 $modal-shadow;
+  box-shadow: 0 10px 5px 0 $black-opacity25;
   background-color: white;
   padding-bottom: 46px;
 }
