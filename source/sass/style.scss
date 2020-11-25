@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "./blocks/wrapper.scss";
+@import "./blocks/container.scss";
+@import "./blocks/border-button.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/showcase-window.scss";
+@import "./blocks/showcase-catalog.scss";
+@import "./blocks/best-merch.scss";
+@import "./blocks/second-title.scss";
+@import "./blocks/about-us.scss";
+@import "./blocks/review.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/cart-form.scss";

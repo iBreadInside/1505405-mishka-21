@@ -1,0 +1,29 @@
+.showcase-catalog__list {
+  display: flex;
+  flex-direction: column;
+  background-color: $aqua;
+}
+
+.showcase-catalog__item {
+  background-color: $aqua;
+
+  &--darker {
+    background-color: $aqua--darker;
+  }
+  margin: 0;
+  padding-top: 24px;
+  padding-left: 30px;
+  min-height: 103px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.showcase-catalog__item p {
+  color: white;
+  width: 131px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  display: block;
+  margin: 0;
+}
