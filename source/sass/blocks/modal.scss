@@ -10,7 +10,7 @@
   height: 100%;
   // display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: $white-opacity90;
   display: none;
 }
 
@@ -19,8 +19,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid $basic-grey;
-  box-shadow: 0 10px 5px 0 rgba(0, 1, 1, 0.25);
+  border-top: 1px solid $grey-color;
+  box-shadow: 0 10px 5px 0 $black-opacity25;
   background-color: white;
   padding-bottom: 46px;
 }
@@ -31,7 +31,7 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 28.5px;
+  margin-top: 29px;
   margin-bottom: 14px;
   width: 150px;
 }
@@ -40,45 +40,5 @@
   font-size: 15px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 21.5px;
-}
-
-.cart-form__sizes {
-  border: none;
-}
-
-.cart-form__size-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 31px;
-  width: 100%;
-}
-
-.cart-form__item-label {
-  width: 82px;
-  min-height: 52px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid $basic-border;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-}
-
-.cart-form__input:checked + .cart-form__item-label {
-  border: 2px solid $basic-aqua;
-}
-
-.cart-form__add {
-  color: white;
-  background-color: $basic-aqua;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 16px;
-  padding: 18px;
-  width: 100%;
-  border: none;
+  margin-bottom: 22px;
 }
