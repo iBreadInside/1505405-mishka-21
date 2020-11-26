@@ -1,0 +1,24 @@
+.form-name__legend {
+  margin-bottom: 29px;
+}
+
+.form-name__item-label {
+  padding-left: 0;
+}
+
+.form-name__item {
+  border: none;
+  border-bottom: 2px solid black;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 35px;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: black;
+    opacity: 0.3;
+  }
+}

@@ -1,11 +1,15 @@
+.showcase-title {
+  padding-bottom: 30px;
+}
+
 .showcase-title h1 {
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   display: block;
-  padding-top: 73.5px;
-  padding-bottom: 73.5px;
-  background-color: $basic-background;
+  padding-top: 74px;
+  padding-bottom: 74px;
+  background-color: $smoke-white;
   margin: 0;
   text-align: center;
 }
@@ -13,6 +17,6 @@
 .showcase-title p {
   font-size: 13px;
   line-height: 24px;
-  color: $basic-black;
+  color: $black-color;
   margin: 0;
 }
