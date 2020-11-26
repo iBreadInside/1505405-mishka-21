@@ -1,0 +1,39 @@
+.cart-form__sizes {
+  border: none;
+}
+
+.cart-form__size-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 31px;
+  width: 100%;
+}
+
+.cart-form__item-label {
+  width: 82px;
+  min-height: 52px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $border-color;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.cart-form__input:checked + .cart-form__item-label {
+  border: 2px solid $aqua;
+}
+
+.cart-form__add {
+  color: white;
+  background-color: $aqua;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  padding: 18px;
+  width: 100%;
+  border: none;
+}
