@@ -1,0 +1,27 @@
+.form-comments__legend {
+  margin-bottom: 23px;
+}
+
+.form-comments__text {
+  resize: none;
+  width: 100%;
+  padding: 17px;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 17px;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: black;
+    opacity: 0.3;
+  }
+}
+
+.form-comments__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black-color;
+  margin: 0;
+  margin-bottom: 30px;
+}

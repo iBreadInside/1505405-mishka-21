@@ -1,0 +1,21 @@
+.write-area {
+  border: none;
+  border-bottom: 2px solid black;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 0;
+  padding-bottom: 17px;
+  margin-bottom: 35px;
+
+  &::placeholder {
+    font-family: $font-default;
+    font-size: 17px;
+    line-height: 18px;
+    color: black;
+    opacity: 0.3;
+  }
+
+  &--textarea::placeholder {
+    font-family: $font-default;
+  }
+}
