@@ -1,10 +1,5 @@
-.page-header__logo {
-  display: flex;
-  justify-content: center;
-}
-
-.page-header__logo img {
-  margin: 22px 0;
+.page-header__wrapper {
+  position: relative;
 }
 
 .page-header__shipping {
@@ -12,4 +7,16 @@
   font-size: 15px;
   line-height: 24px;
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    width: 668px;
+  }
+
+  .page-header__shipping {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
 }

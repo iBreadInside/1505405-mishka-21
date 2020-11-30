@@ -6,8 +6,21 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
-  width: 260px;
+  max-width: 260px;
   margin: auto;
   margin-bottom: 120px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .showcase-window {
+    padding-top: 154px;
+  }
+
+  .showcase-window h1 {
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 500px;
+    margin-bottom: 372px;
+  }
 }
