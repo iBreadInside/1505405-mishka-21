@@ -1,0 +1,15 @@
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header__logo img {
+  margin: 22px 0;
+}
+
+.page-header__shipping {
+  color: $black-color;
+  font-size: 15px;
+  line-height: 24px;
+  display: none;
+}

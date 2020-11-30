@@ -2,6 +2,17 @@
   padding-bottom: 45px;
 }
 
+.review__wrapper {
+  width: 260px;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.review__title {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
 .review__item blockquote {
   color: $black-color;
   font-size: 15px;
@@ -10,9 +21,13 @@
 }
 
 .review__item cite {
+  font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin-top: 33px;
+  margin-bottom: 30px;
+  display: block;
 }
 
 .review__item a {
@@ -22,6 +37,23 @@
   line-height: 30px;
 }
 
+.review__slider-buttons-block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.review__slider-arrow {
+  background-color: white;
+  border: 1px solid $smoke-white--light;
+  margin: 0;
+  display: block;
+  width: 100%;
+  min-height: 52px;
+}
+
 .review__to-write {
   padding: 16px 65px;
+  display: block;
+  text-align: center;
 }

@@ -1,3 +1,16 @@
+.social {
+  margin-bottom: 29px;
+}
+
 .social__list {
+  width: 260px;
+  padding-bottom: 27px;
   border-bottom: 1px solid $gainsboro;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.social__list li:not(:last-child) {
+  margin-right: 41px;
 }

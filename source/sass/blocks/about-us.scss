@@ -3,6 +3,21 @@
   padding-bottom: 58px;
 }
 
+.about-us__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.about-us__title {
+  padding-bottom: 83px;
+}
+
+.about-us__list {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 83px;
+}
+
 .about-us__item {
   font-weight: bold;
   font-size: 17px;

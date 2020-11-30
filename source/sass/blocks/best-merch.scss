@@ -1,6 +1,8 @@
 .best-merch {
   padding-top: 31px;
   padding-bottom: 36px;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 .best-merch__subtitle {
@@ -12,15 +14,30 @@
 }
 
 .best-merch__char-table {
+  margin-top: 28px;
   margin-bottom: 28px;
   color: $black-color;
   font-size: 15px;
   line-height: 20px;
+  width: 100%;
 }
 
 .best-merch__char-table tr {
   border-bottom: 1px solid $smoke-white--light;
-  display: block;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 39px;
+}
+
+.best-merch__char-table td:first-child {
+  width: 97px;
+}
+
+.best-merch__wrapper {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .best-merch__wrapper p {
@@ -34,8 +51,12 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin: 25px 0;
+  display: block;
+  text-align: center;
 }
 
 .best-merch__buy {
   padding: 16px 70px;
+  width: 100%;
 }

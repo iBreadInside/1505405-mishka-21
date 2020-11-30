@@ -3,10 +3,23 @@
   padding-bottom: 39px;
 }
 
+.contacts__wrapper {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
   margin: 0;
+  margin-bottom: 28px;
+}
+
+.contacts__items {
+  display: grid;
+  grid-template-columns: 76px 183px;
+  grid-template-rows: auto;
 }
 
 .contacts__items p,
@@ -22,9 +35,14 @@
 }
 
 .contacts iframe {
+  margin-top: 62px;
   margin-bottom: 42px;
 }
 
 .contacts__write-us {
-  padding: 16px 38px;
+  width: 260px;
+  margin: 0 auto;
+  padding: 16px 0;
+  display: block;
+  text-align: center;
 }

@@ -1,9 +1,50 @@
+.main-navigation {
+  position: relative;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  width: 20px;
+  height: 14px;
+  background: linear-gradient(to bottom, $black-color--darker 0, $black-color--darker 2px, transparent 2px, transparent 6px, $black-color--darker 6px, $black-color--darker 8px, transparent 8px, transparent 12px, $black-color--darker 12px, $black-color--darker 14px);
+  border: none;
+}
+
 .main-navigation__list {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-navigation__item {
   border-bottom: 1px solid $smoke-white--light;
+  position: relative;
+}
+
+.main-navigation__item-link {
+  position: relative;
+  display: block;
+  padding: 29px 0 27px 76px;
+
+  &:hover p {
+    opacity: 0.6;
+  }
+
+  &:active p {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation__item-link p {
+  margin: 0;
+}
+
+.main-navigation__item-icon {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
 }
