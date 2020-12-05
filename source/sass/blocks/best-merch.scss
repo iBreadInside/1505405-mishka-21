@@ -1,6 +1,11 @@
 .best-merch {
   padding-top: 31px;
   padding-bottom: 36px;
+}
+
+.best-merch__wrapper {
+  width: $mobile-width--wrapper;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: auto;
 }
@@ -25,7 +30,6 @@
 .best-merch__char-table tr {
   border-bottom: 1px solid $smoke-white--light;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 39px;
@@ -35,15 +39,11 @@
   width: 97px;
 }
 
-.best-merch__wrapper {
-  width: 260px;
-  margin: 0 auto;
-}
-
 .best-merch__wrapper p {
   color: $black-color;
   font-size: 15px;
   line-height: 24px;
+  margin: 0;
 }
 
 .best-merch__cost {
@@ -59,4 +59,63 @@
 .best-merch__buy {
   padding: 16px 70px;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .best-merch {
+    padding-top: 40px;
+  }
+
+  .best-merch__wrapper {
+    position: relative;
+    width: $tablet-width--wrapper;
+    grid-template-columns: 292px 42px 334px;
+    grid-template-rows: auto;
+  }
+
+  .best-merch__title {
+    grid-column: 1/5;
+    margin-bottom: 38px;
+  }
+
+  .best-merch__subtitle {
+    position: absolute;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    top: 10px;
+    right: 13px;
+    max-width: 100px;
+  }
+
+  .best-merch__wrapper p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-merch__char-table,
+  .best-merch__cost,
+  .best-merch__buy {
+    grid-column: 1/2;
+  }
+
+  .best-merch__char-table {
+    margin-top: 48px;
+    margin-bottom: 70px;
+  }
+
+  .best-merch__cost {
+    margin: 0;
+    margin-bottom: 33px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .best-merch__wrapper img {
+    width: 334px;
+    height: 404px;
+    grid-column: 3/4;
+    grid-row: 2/6;
+    margin-top: auto;
+  }
 }

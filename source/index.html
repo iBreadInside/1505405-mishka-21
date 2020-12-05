@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка - главная страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper wrapper">
+      <div class="page-header__container container">
         <nav class="main-navigation main-navigation--opened">
           <a class="main-navigation__logo">
             <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Мишка - магазин вязаных изделий">
@@ -15,12 +16,12 @@
           <button class="main-navigation__toggle" type="button" aria-label="Открыть меню">
           </button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item">
+            <li class="main-navigation__item main-navigation__item--catalog">
               <a class="main-navigation__item-link main-navigation__item-link--catalog" href="catalog.html">
                 <p>Каталог товаров</p>
               </a>
             </li>
-            <li class="main-navigation__item">
+            <li class="main-navigation__item main-navigation__item--form">
               <a class="main-navigation__item-link main-navigation__item-link--form" href="form.html">
                 <p>Вязание на заказ</p>
               </a>
@@ -44,14 +45,14 @@
     </header>
     <main class="page-main">
       <!-- Общая обертка контента -->
-      <div class="page-main__wrapper wrapper">
+      <div class="page-main__container container">
         <!-- Раздел витрины шапки -->
         <section class="showcase-window">
           <h1>Милые штуки ручной работы&nbsp;для дома</h1>
           <!-- <img src="https://via.placeholder.com/575x373" width="575" height="373" alt="Витрина наших изделий: вязаные игрушки, корзинки"> -->
         </section>
         <section class="showcase-catalog">
-          <div class="showcase-catalog__wrapper wrapper">
+          <div class="showcase-catalog__container container">
             <ul class="showcase-catalog__list">
               <li>
                 <a class="showcase-catalog__item" href="#"><p>Предметы интерьера</p></a>
@@ -105,7 +106,7 @@
         <!-- Раздел "Отзывы" -->
         <section class="review">
           <div class="review__wrapper wrapper">
-            <h2 class="review__title">Отзывы</h2>
+            <h2 class="review__title second-title">Отзывы</h2>
             <ul class="review__list">
               <li class="review__item review__item--current">
                 <blockquote>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
@@ -138,12 +139,16 @@
         <section class="contacts">
           <div class="contacts__wrapper wrapper">
             <h2 class="contacts__title">Контакты</h2>
-            <div class="contacts__items">
-              <p>e-mail:</p>
-              <a href="#">info@mimimishkashop.ru</a>
-              <p>адрес:</p>
-              <p>г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д. 19/8, офис 101</p>
-            </div>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p>e-mail:</p>
+                <a href="#">info@mimimishkashop.ru</a>
+              </li>
+              <li class="contacts__item">
+                <p>адрес:</p>
+                <p>г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</p>
+              </li>
+            </ul>
           </div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6132732513884!2d30.322197290665613!3d59.93871048347301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602604344933!5m2!1sru!2sru"
           width="320" height="454" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
@@ -151,7 +156,7 @@
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo">
           <img src="https://via.placeholder.com/102x34" width="102" height="34" alt="Мишка - главная страница">
@@ -179,10 +184,10 @@
     </footer>
     <!-- Модальные окна -->
     <section class="modal modal--cart">
-      <div class="modal__wrapper wrapper">
+      <div class="modal__container container">
         <h3>Добавить в корзину</h3>
         <p>Выберите размер</p>
-        <div class="container">
+        <div class="wrapper">
           <form class="cart-form" method="GET" action="https://echo.htmlacademy.ru">
             <fieldset class="cart-form__sizes sizes-checkbox">
               <ul class="cart-form__size-list">

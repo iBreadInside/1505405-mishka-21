@@ -1,21 +1,30 @@
 .showcase-catalog__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: $aqua;
 }
 
 .showcase-catalog__item {
   background-color: $aqua;
-
-  &--darker {
-    background-color: $aqua--darker;
-  }
   margin: 0;
   padding-top: 24px;
   padding-left: 30px;
   min-height: 103px;
   display: block;
   box-sizing: border-box;
+
+  &:active {
+    background-color: $aqua--hover;
+  }
+
+  &--darker {
+    background-color: $aqua--darker;
+  }
+
+  &--darker:active {
+    background-color: $aqua--darker-hover;
+  }
 }
 
 .showcase-catalog__item p {
@@ -26,4 +35,16 @@
   font-weight: bold;
   display: block;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .showcase-catalog__list {
+    flex-direction: row;
+  }
+
+  .showcase-catalog__list li {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
 }

@@ -89,24 +89,33 @@
     &--search p {
       display: none;
     }
+
+    &--catalog {
+      padding: 10px;
+    }
+
+    &--form {
+      padding: 10px;
+    }
   }
 
-  .main-navigation__item:nth-child(1) {
-    position: absolute;
-    top: 75px;
-    left: -75px;
-    font-size: 15px;
-    line-height: 24px;
-    border: none;
-  }
+  .main-navigation__item {
+    &--catalog {
+      position: absolute;
+      top: 93px;
+      left: -12px;
+      font-size: 15px;
+      line-height: 24px;
+      border: none;
+    }
 
-  .main-navigation__item:nth-child(2) {
-    position: absolute;
-    font-size: 15px;
-    line-height: 24px;
-    top: 75px;
-    left: 93px;
-    border: none;
+    &--form {
+      position: absolute;
+      font-size: 15px;
+      line-height: 24px;
+      top: 93px;
+      left: 155px;
+      border: none;
+    }
   }
-
 }

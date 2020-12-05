@@ -1,8 +1,8 @@
 .wrapper {
-  width: $mobile-width;
+  width: $mobile-width--wrapper;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    width: $tablet-width--wrapper;
   }
 }

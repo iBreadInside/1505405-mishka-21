@@ -1,4 +1,4 @@
-.page-header__wrapper {
+.page-header__container {
   position: relative;
 }
 
@@ -10,10 +10,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__wrapper {
-    width: 668px;
-  }
-
   .page-header__shipping {
     display: block;
     position: absolute;
