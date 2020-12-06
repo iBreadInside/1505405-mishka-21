@@ -40,11 +40,17 @@
 @media (min-width: $tablet-width) {
   .showcase-catalog__list {
     flex-direction: row;
+    margin: 0 50px;
   }
 
   .showcase-catalog__list li {
     display: block;
     box-sizing: border-box;
     flex-grow: 1;
+  }
+
+  .showcase-catalog__item p {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
