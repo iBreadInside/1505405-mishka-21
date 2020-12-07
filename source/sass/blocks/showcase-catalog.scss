@@ -1,3 +1,11 @@
+.showcase-catalog {
+  background-color: $grey-color--background;
+}
+
+.showcase-catalog__wrapper {
+  padding: 0;
+}
+
 .showcase-catalog__list {
   display: flex;
   flex-direction: column;

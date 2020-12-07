@@ -3,11 +3,6 @@
   margin-bottom: 58px;
 }
 
-.about-us__wrapper {
-  width: $mobile-width--wrapper;
-  margin: 0 auto;
-}
-
 .about-us__title {
   margin-bottom: 83px;
 }
@@ -45,7 +40,7 @@
   }
 
   .about-us__item {
-    padding-right: 56px;
+    margin-right: 56px;
 
     &:nth-child(-n+3) {
       grid-column: 1/2;

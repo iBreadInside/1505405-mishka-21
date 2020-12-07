@@ -1,5 +1,6 @@
 .showcase-window {
   padding-top: 73px;
+  background-color: $grey-color--background;
 }
 
 .showcase-window h1 {
@@ -8,7 +9,7 @@
   font-weight: bold;
   max-width: 260px;
   margin: auto;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   text-align: center;
 }
 
@@ -21,7 +22,7 @@
     font-size: 43px;
     line-height: 50px;
     max-width: 500px;
-    margin-bottom: 372px;
+    padding-bottom: 372px;
   }
 
   @media (min-width: $desktop-width) {

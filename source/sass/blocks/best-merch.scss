@@ -4,8 +4,6 @@
 }
 
 .best-merch__wrapper {
-  width: $mobile-width--wrapper;
-  margin: 0 auto;
   display: grid;
   grid-template-rows: auto;
 }
@@ -33,6 +31,7 @@
   align-items: center;
   width: 100%;
   height: 39px;
+  padding-bottom: 5px;
 }
 
 .best-merch__char-table td:first-child {
@@ -67,25 +66,21 @@
   }
 
   .best-merch__wrapper {
-    position: relative;
-    width: $tablet-width--wrapper;
-    grid-template-columns: 292px 42px 334px;
+    grid-template-columns: 292px 42px 200px 134px;
     grid-template-rows: auto;
   }
 
   .best-merch__title {
-    grid-column: 1/5;
+    grid-column: 1/4;
     margin-bottom: 38px;
   }
 
   .best-merch__subtitle {
-    position: absolute;
     font-size: 17px;
     line-height: 17px;
     text-align: center;
-    top: 10px;
-    right: 13px;
     max-width: 100px;
+    margin-left: auto;
   }
 
   .best-merch__wrapper p {
