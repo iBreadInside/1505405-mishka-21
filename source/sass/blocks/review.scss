@@ -64,7 +64,6 @@
   }
 
   .review__wrapper {
-    width: $tablet-width--wrapper;
     grid-template-columns: 1fr 187px;
     grid-template-rows: auto;
   }
@@ -107,5 +106,11 @@
     padding: 16px 28px;
     font-size: 17px;
     height: fit-content;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__wrapper {
+    padding-left: 225px;
   }
 }

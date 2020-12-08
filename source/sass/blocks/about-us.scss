@@ -25,10 +25,6 @@
     margin-bottom: 83px;
   }
 
-  .about-us__wrapper {
-    width: $tablet-width--wrapper;
-  }
-
   .about-us__title {
     margin-bottom: 98px;
   }
@@ -40,7 +36,9 @@
   }
 
   .about-us__item {
-    margin-right: 56px;
+    margin-right: 25px;
+    font-size: 20px;
+    line-height: 22px;
 
     &:nth-child(-n+3) {
       grid-column: 1/2;
@@ -60,5 +58,11 @@
       grid-row: 3/4;
       grid-column: 2/3;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    padding: 0 225px;
   }
 }
