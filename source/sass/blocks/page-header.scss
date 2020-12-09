@@ -1,0 +1,21 @@
+.page-header__wrapper {
+  position: relative;
+  padding: 0;
+}
+
+.page-header__shipping {
+  color: $black-color;
+  font-size: 15px;
+  line-height: 24px;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__shipping {
+    display: block;
+    position: absolute;
+    right: 50px;
+    margin: 0;
+    margin-top: 20px;
+  }
+}

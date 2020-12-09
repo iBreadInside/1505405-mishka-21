@@ -1,12 +1,35 @@
 .showcase-window {
   padding-top: 73px;
+  background-color: $grey-color--background;
 }
 
 .showcase-window h1 {
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
-  width: 260px;
-  margin: 0;
-  margin-bottom: 120px;
+  max-width: 260px;
+  margin: auto;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .showcase-window {
+    padding-top: 154px;
+  }
+
+  .showcase-window h1 {
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 500px;
+    padding-bottom: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    .showcase-window h1 {
+      font-size: 53px;
+      line-height: 57px;
+      max-width: 700px;
+    }
+  }
 }

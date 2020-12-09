@@ -4,7 +4,13 @@
 }
 
 .page__body {
-  min-width: 320px;
+  // min-width: $mobile-width;
   color: black;
   background-color: white;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    min-width: $tablet-width;
+  }
 }

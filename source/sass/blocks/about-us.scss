@@ -1,10 +1,68 @@
 .about-us {
-  padding-top: 31px;
-  padding-bottom: 58px;
+  margin-top: 31px;
+  margin-bottom: 58px;
+}
+
+.about-us__title {
+  margin-bottom: 83px;
+}
+
+.about-us__list {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 83px;
 }
 
 .about-us__item {
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    margin-top: 56px;
+    margin-bottom: 83px;
+  }
+
+  .about-us__title {
+    margin-bottom: 98px;
+  }
+
+  .about-us__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 100px;
+  }
+
+  .about-us__item {
+    margin-right: 25px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-child(-n+3) {
+      grid-column: 1/2;
+    }
+
+    &:nth-child(4) {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    &:nth-child(5) {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+
+    &:nth-child(6) {
+      grid-row: 3/4;
+      grid-column: 2/3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    padding: 0 225px;
+  }
 }

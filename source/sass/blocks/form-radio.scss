@@ -1,5 +1,4 @@
 .form-radio__list li {
-  position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
@@ -14,7 +13,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: -12px;
+  top: auto;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -29,7 +28,7 @@
   content: "";
   position: absolute;
   left: 12px;
-  top: 0;
+  top: auto;
   width: 16px;
   height: 16px;
   border-radius: 50%;
