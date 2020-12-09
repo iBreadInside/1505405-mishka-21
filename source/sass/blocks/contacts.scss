@@ -96,17 +96,16 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
     width: $desktop-width;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 174px 398px 527px;
+    grid-template-rows: 80px auto;
   }
 
   .contacts__wrapper {
-    padding-left: 225px;
-  }
-
-  .contacts__title {
-    margin-top: 150px;
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 
   .contacts__list {
@@ -121,15 +120,15 @@
   }
 
   .contacts iframe {
+    margin: 0;
     width: 527px;
-    position: absolute;
-    top: 70px;
-    right: 50px;
+    height: 100%;
+    grid-column: 3/4;
+    grid-row: 1/4;
   }
 
   .contacts__write-us {
-    position: absolute;
-    left: 225px;
-    bottom: 52px;
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 }
