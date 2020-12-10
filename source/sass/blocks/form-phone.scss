@@ -1,3 +1,9 @@
 .form-phone__legend {
   margin-bottom: 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-phone__legend {
+    margin: 0;
+  }
+}

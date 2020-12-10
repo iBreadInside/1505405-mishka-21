@@ -14,11 +14,18 @@
   padding-top: 17px;
   padding-bottom: 17px;
   margin-bottom: 35px;
+  width: 100%;
 
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
     color: black;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-name__legend {
+    margin: 0;
   }
 }

@@ -1,9 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form fieldset {
+  position: relative;
   border: 0;
-  border-top: 1px solid $aqua;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: 30px;
+    width: 200px;
+    height: 1px;
+    border-top: 1px solid $aqua;
+  }
+
+  &.form-email::after {
+    width: 182px;
+  }
 }
 
 .form__send {
   width: 100%;
   padding: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .form fieldset {
+    display: grid;
+    grid-template-columns: 167px auto;
+    grid-row: auto;
+    padding: 50px;
+    padding-top: 0;
+
+    & ul {
+      margin-top: -15px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }

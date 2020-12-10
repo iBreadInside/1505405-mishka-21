@@ -11,6 +11,7 @@
   margin-bottom: 17px;
 
   &::placeholder {
+    font-family: $font-default;
     font-size: 17px;
     line-height: 18px;
     color: black;
@@ -24,4 +25,14 @@
   color: $black-color;
   margin: 0;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-comments__legend {
+    margin-bottom: 0;
+  }
+
+  .form-comments__text {
+    margin-top: -15px;
+  }
 }

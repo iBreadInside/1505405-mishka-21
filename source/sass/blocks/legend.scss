@@ -6,4 +6,8 @@
   text-transform: uppercase;
   box-sizing: border-box;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
