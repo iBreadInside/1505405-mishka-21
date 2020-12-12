@@ -3,44 +3,21 @@
   flex-direction: column;
 }
 
-.form fieldset {
-  position: relative;
-  border: 0;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 6px;
-    right: 30px;
-    width: 200px;
-    height: 1px;
-    border-top: 1px solid $aqua;
-  }
-
-  &.form-email::after {
-    width: 182px;
-  }
-}
-
 .form__send {
   width: 100%;
   padding: 18px;
+  font-size: 17px;
+  line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
-  .form fieldset {
-    display: grid;
-    grid-template-columns: 167px auto;
-    grid-row: auto;
-    padding: 50px;
-    padding-top: 0;
+  .form__send {
+    max-width: 230px;
+  }
+}
 
-    & ul {
-      margin-top: -15px;
-    }
-
-    &::after {
-      display: none;
-    }
+@media (min-width: $desktop-width) {
+  .form__send {
+    margin-left: 174px;
   }
 }

@@ -8,6 +8,7 @@
   padding: 17px;
   display: block;
   box-sizing: border-box;
+  border: 2px solid $black-color;
   margin-bottom: 17px;
 
   &::placeholder {
@@ -28,11 +29,38 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-comments {
+    position: relative;
+  }
+
   .form-comments__legend {
     margin-bottom: 0;
   }
 
   .form-comments__text {
     margin-top: -15px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+
+  .form-comments__note {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 0;
+    position: absolute;
+    right: 50px;
+    bottom: -82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-comments__text {
+    width: 700px;
+  }
+
+  .form-comments__note {
+    right: 224px;
   }
 }

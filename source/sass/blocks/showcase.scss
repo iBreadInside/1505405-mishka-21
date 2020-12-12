@@ -35,3 +35,15 @@
     margin-top: 54px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .showcase__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .showcase__wrapper {
+    width: 700px;
+    padding: 0;
+  }
+}

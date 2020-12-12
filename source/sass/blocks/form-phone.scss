@@ -7,3 +7,9 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-phone__legend {
+    margin-left: 50px;
+  }
+}

@@ -19,7 +19,21 @@
 
 @media (min-width: $tablet-width) {
   .write-area {
+    font-size: 19px;
     margin-top: -15px;
     margin-bottom: 0;
+    background-color: transparent;
+    padding-left: 18px;
+
+
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .write-area {
+    width: 700px;
   }
 }

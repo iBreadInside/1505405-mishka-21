@@ -37,3 +37,26 @@
   background-position: 0 0;
   box-sizing: border-box;
 }
+
+@media (min-width: $tablet-width) {
+  .form-radio {
+    margin-bottom: 34px;
+  }
+
+  .form-radio__list li {
+    margin-bottom: 58px;
+  }
+
+  .form-radio__item-label {
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .form-radio__item:checked + label::after {
+    width: 21px;
+    height: 21px;
+    left: 15px;
+  }
+}

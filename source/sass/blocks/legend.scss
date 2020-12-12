@@ -10,4 +10,8 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
+  }
 }

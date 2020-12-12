@@ -18,7 +18,7 @@
   width: 38px;
   height: 38px;
   border: 2px solid $black-color;
-  background-color: white;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
@@ -34,4 +34,32 @@
   border-top: 1px solid black;
   border-right: 1px solid black;
   transform: rotate(135deg);
+}
+
+@media (min-width: $tablet-width) {
+  .form-checkbox__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & li {
+      margin-bottom: 56px;
+    }
+  }
+
+  .form-checkbox__item-label::before {
+    width: 52px;
+    height: 52px;
+  }
+
+  .form-checkbox__item:checked + label::after {
+    top: 0;
+    left: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-checkbox__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 100px;
+  }
 }

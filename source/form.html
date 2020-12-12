@@ -66,83 +66,93 @@
         <!-- Блок формы -->
         <form class="form" method="GET" action="https://echo.htmlacademy.ru">
           <!-- Блок "Тип" -->
-          <fieldset class="form-radio wrapper">
-            <legend class="form-radio__legend legend">Тип</legend>
-            <ul class="form-radio__list">
-              <li>
-                <input class="visually-hidden form-radio__item" type="radio" name="type" value="accessory" id="radio-accesory" checked>
-                <label class="form-radio__item-label form-label" for="radio-accesory">Аксессуар для интерьера</label>
-              </li>
-              <li>
-                <input class="visually-hidden form-radio__item" type="radio" name="type" value="toy" id="radio-toy">
-                <label class="form-radio__item-label form-label" for="radio-toy">Детская игрушка</label>
-              </li>
-            </ul>
-          </fieldset>
+          <section class="form-section form-section--type">
+            <fieldset class="form-radio wrapper">
+              <legend class="form-radio__legend legend">Тип</legend>
+              <ul class="form-radio__list">
+                <li>
+                  <input class="visually-hidden form-radio__item" type="radio" name="type" value="accessory" id="radio-accesory" checked>
+                  <label class="form-radio__item-label form-label" for="radio-accesory">Аксессуар для интерьера</label>
+                </li>
+                <li>
+                  <input class="visually-hidden form-radio__item" type="radio" name="type" value="toy" id="radio-toy">
+                  <label class="form-radio__item-label form-label" for="radio-toy">Детская игрушка</label>
+                </li>
+              </ul>
+            </fieldset>
+          </section>
           <!-- Блок "Цвет" -->
-          <fieldset class="form-checkbox wrapper">
-            <legend class="form-checkbox__legend legend">Цвет</legend>
-            <ul class="form-checkbox__list">
-              <li>
-                <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="white" id="check-white" checked>
-                <label class="form-checkbox__item-label form-label" for="check-white">Белый</label>
-              </li>
-              <li>
-                <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="grey" id="check-grey" checked>
-                <label class="form-checkbox__item-label form-label" for="check-grey">Серый</label>
-              </li>
-              <li>
-                <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="tyffany" id="check-tyffany">
-                <label class="form-checkbox__item-label form-label" for="check-tyffany">«Тиффани»</label>
-              </li>
-              <li>
-                <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="black" id="check-black">
-                <label class="form-checkbox__item-label form-label" for="check-black">Черный</label>
-              </li>
-              <li>
-                <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="pink" id="check-pink">
-                <label class="form-checkbox__item-label form-label" for="check-pink">Розовый</label>
-              </li>
-              <li>
-                <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="orange" id="check-orange">
-                <label class="form-checkbox__item-label form-label" for="check-orange">Оранжевый</label>
-              </li>
-            </ul>
-          </fieldset>
+          <section class="form-section form-section--color">
+            <fieldset class="form-checkbox wrapper">
+              <legend class="form-checkbox__legend legend">Цвет</legend>
+              <ul class="form-checkbox__list">
+                <li>
+                  <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="white" id="check-white" checked>
+                  <label class="form-checkbox__item-label form-label" for="check-white">Белый</label>
+                </li>
+                <li>
+                  <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="grey" id="check-grey" checked>
+                  <label class="form-checkbox__item-label form-label" for="check-grey">Серый</label>
+                </li>
+                <li>
+                  <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="tyffany" id="check-tyffany">
+                  <label class="form-checkbox__item-label form-label" for="check-tyffany">«Тиффани»</label>
+                </li>
+                <li>
+                  <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="black" id="check-black">
+                  <label class="form-checkbox__item-label form-label" for="check-black">Черный</label>
+                </li>
+                <li>
+                  <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="pink" id="check-pink">
+                  <label class="form-checkbox__item-label form-label" for="check-pink">Розовый</label>
+                </li>
+                <li>
+                  <input class="visually-hidden form-checkbox__item" type="checkbox" name="color" value="orange" id="check-orange">
+                  <label class="form-checkbox__item-label form-label" for="check-orange">Оранжевый</label>
+                </li>
+              </ul>
+            </fieldset>
+          </section>
           <!-- Блок "ФИО" -->
-          <fieldset class="form-name wrapper">
-            <legend class="form-name__legend legend">Фио</legend>
-            <ul class="form-name__list">
-              <li>
-                <label class="form-name__item-label form-label" for="first-name">Имя:</label>
-                <input class="form-name__item first-name" type="text" id="first-name" placeholder="Введите ваше имя*">
-              </li>
-              <li>
-                <label class="form-name__item-label form-label" for="second-name">Фамилия:</label>
-                <input class="form-name__item second-name" type="text" id="second-name" placeholder="Укажите фамилию*">
-              </li>
-              <li>
-                <label class="form-name__item-label form-label" for="middle-name">Отчество:</label>
-                <input class="form-name__item middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете">
-              </li>
-            </ul>
-          </fieldset>
-          <!-- Блок контактов заказчика -->
-          <fieldset class="form-phone wrapper">
-            <legend class="form-phone__legend legend">Тел</legend>
-            <input class="form-phone__write-area write-area" type="tel" id="your-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Укажите номер вашего телефона">
-            <!-- <img src="https://via.placeholder.com/25x24" width="25" height="24" alt="Иконка телефона"> -->
-          </fieldset>
-          <fieldset class="form-email wrapper">
-            <legend class="form-email__legend legend">E-mail</legend>
-            <input class="form-email__write-area write-area" type="email" id="your-email" placeholder="Ваш Email*" aria-label="Укажите">
-            <!-- <img src="https://via.placeholder.com/32x21" width="32" height="21" alt="Иконка письма"> -->
-          </fieldset>
-          <fieldset class="form-comments wrapper">
-            <legend class="form-comments__legend legend">Доп</legend>
-            <textarea class="form-comments__text" id="comments" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
-            <p class="form-comments__note"><small>*Поля обязательны для заполнения</small></p>
-          </fieldset>
+          <section class="form-section form-section--personal">
+            <fieldset class="form-name wrapper">
+              <legend class="form-name__legend legend">Фио</legend>
+              <ul class="form-name__list">
+                <li>
+                  <label class="form-name__item-label form-label" for="first-name">Имя:</label>
+                  <input class="form-name__item form-name__item--first-name" type="text" id="first-name" placeholder="Введите ваше имя*">
+                </li>
+                <li>
+                  <label class="form-name__item-label form-label" for="second-name">Фамилия:</label>
+                  <input class="form-name__item form-name__item--second-name" type="text" id="second-name" placeholder="Укажите фамилию*">
+                </li>
+                <li>
+                  <label class="form-name__item-label form-label" for="middle-name">Отчество:</label>
+                  <input class="form-name__item form-name__item--middle-name" type="text" id="middle-name" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
+            </fieldset>
+          </section>
+          <section class="form-section form-section--contacts">
+            <!-- Блок контактов заказчика -->
+            <fieldset class="form-phone wrapper">
+              <legend class="form-phone__legend legend">Тел</legend>
+              <input class="form-phone__write-area write-area" type="tel" id="your-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Укажите номер вашего телефона">
+              <!-- <img src="https://via.placeholder.com/25x24" width="25" height="24" alt="Иконка телефона"> -->
+            </fieldset>
+            <fieldset class="form-email wrapper">
+              <legend class="form-email__legend legend">E-mail</legend>
+              <input class="form-email__write-area write-area" type="email" id="your-email" placeholder="Ваш Email*" aria-label="Укажите">
+              <!-- <img src="https://via.placeholder.com/32x21" width="32" height="21" alt="Иконка письма"> -->
+            </fieldset>
+          </section>
+          <section class="form-section form-section--comments">
+            <fieldset class="form-comments wrapper">
+              <legend class="form-comments__legend legend">Доп</legend>
+              <textarea class="form-comments__text" id="comments" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
+              <p class="form-comments__note">*Поля обязательны для заполнения</p>
+            </fieldset>
+          </section>
           <div class="wrapper">
             <button class="form__send border-button" type="submit">Отправить заказ</button>
           </div>
