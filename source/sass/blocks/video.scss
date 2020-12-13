@@ -1,16 +1,64 @@
+.video {
+  margin-bottom: 58px;
+}
+
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.video__title-block {
+  order: -1;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  border: 1px solid $smoke-white--light;
+  border-bottom: none;
+  padding: 22px 34px 26px;
+}
+
+.video__title-block img {
+  margin-right: 25px;
+}
+
 .video__title {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  display: inline-block;
+  margin: 0;
+}
+
+.video__block {
+  position: relative;
+}
+
+.video__block video {
+  line-height: 0;
+  object-fit: cover;
+}
+
+.video__play {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: 37px;
+  left: 80px;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .video__description {
-  margin: 33px;
+  padding: 33px;
+  border: 1px solid $smoke-white--light;
+  border-top: none;
 }
 
 .video__description p {
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 41px;
 }
 
 .video__buy-button {
@@ -18,4 +66,92 @@
   box-sizing: border-box;
   padding: 18px 11px;
   text-align: center;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__title-block {
+    order: 0;
+    justify-content: flex-start;
+    padding: 39px 42px 0;
+  }
+
+  .video__title-block img {
+    margin-right: 33px;
+  }
+
+  .video__title {
+    font-size: 20px;
+  }
+
+  .video__block video {
+    width: 100%;
+    height: 455px;
+
+    &::placeholder {
+      height: 455px;
+    }
+  }
+
+  .video__play {
+    top: 190px;
+    left: 285px;
+  }
+
+  .video__description {
+    padding: 25px 42px 41px;
+  }
+
+  .video__description p {
+    font-size: 15px;
+  }
+
+  .video__buy-button {
+    font-size: 17px;
+    padding: 16px 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__wrapper {
+    display: grid;
+    grid-template-columns: 683px auto;
+    grid-template-rows: 172px auto;
+  }
+
+  .video__block {
+    grid-row: 1/-1;
+  }
+
+  .video__block video {
+    width: 683px;
+  }
+
+  .video__title-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 47px 57px 27px 79px;
+    border-left: none;
+  }
+
+  .video__title {
+    max-width: 230px;
+  }
+
+  .video__title-block img {
+    margin-bottom: 27px;
+  }
+
+  .video__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 2/-1;
+    padding: 0 56px 60px 79px;
+  }
+
+  // .video__buy-button {
+  //   margin-top: auto;
+  // }
 }

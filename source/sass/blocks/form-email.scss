@@ -1,8 +1,18 @@
+.form-email {
+  &::after {
+    width: 182px;
+  }
+}
+
 .form-email__legend {
   margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .form-email {
+    margin-bottom: 24px;
+  }
+
   .form-email__legend {
     margin-bottom: 0;
   }

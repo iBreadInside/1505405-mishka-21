@@ -40,10 +40,10 @@
   .form-checkbox__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
 
-    & li {
-      margin-bottom: 56px;
-    }
+  .form-checkbox__list li {
+    margin-bottom: 56px;
   }
 
   .form-checkbox__item-label::before {

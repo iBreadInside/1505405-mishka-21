@@ -1,22 +1,3 @@
-.form-section fieldset {
-  position: relative;
-  border: 0;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 6px;
-    right: 30px;
-    width: 200px;
-    height: 1px;
-    border-top: 1px solid $aqua;
-  }
-
-  &.form-email::after {
-    width: 182px;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .form-section {
     padding-top: 65px;
@@ -25,37 +6,13 @@
     &:nth-child(even) {
       background-color: $smoke-white;
     }
-  }
 
-  .form-section--contacts {
-    padding-bottom: 50px;
-
-    & fieldset {
-      margin-bottom: 24px;
-    }
-  }
-
-  .form-section--comments {
-    margin-bottom: 22px;
-  }
-
-  .form-section fieldset {
-    display: grid;
-    grid-template-columns: 167px auto;
-    grid-row: auto;
-
-    & ul {
-      margin-top: -15px;
+    &--contacts {
+      padding-bottom: 50px;
     }
 
-    &::after {
-      display: none;
+    &--comments {
+      margin-bottom: 22px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form-section fieldset {
-    grid-template-columns: 174px auto;
   }
 }
