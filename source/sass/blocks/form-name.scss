@@ -6,6 +6,10 @@
   padding-left: 0;
 }
 
+.form-name__list li {
+  margin-bottom: 35px;
+}
+
 .form-name__item {
   border: none;
   border-bottom: 2px solid black;
@@ -13,7 +17,6 @@
   box-sizing: border-box;
   padding-top: 17px;
   padding-bottom: 17px;
-  margin-bottom: 35px;
   width: 100%;
 
   &::placeholder {
@@ -29,10 +32,18 @@
     margin: 0;
   }
 
+  .form-name__list {
+    margin-top: -15px;
+  }
+
   .form-name__list li {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .form-name__item {

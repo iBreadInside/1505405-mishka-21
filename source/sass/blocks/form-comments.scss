@@ -38,7 +38,8 @@
   }
 
   .form-comments__text {
-    margin-top: -15px;
+    margin-top: -25px;
+    margin-bottom: 0;
 
     &::placeholder {
       font-size: 19px;
@@ -51,7 +52,7 @@
     margin-bottom: 0;
     position: absolute;
     right: 50px;
-    bottom: -82px;
+    bottom: -95px;
   }
 }
 

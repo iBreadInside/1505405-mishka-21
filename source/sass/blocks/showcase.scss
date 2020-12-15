@@ -23,6 +23,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .showcase {
+    padding-bottom: 81px;
+  }
+
   .showcase__title {
     padding: 100px 0;
     font-size: 43px;

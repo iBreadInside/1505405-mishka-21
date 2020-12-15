@@ -1,31 +1,13 @@
 .form-fieldset {
   position: relative;
   border: 0;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 6px;
-    right: 30px;
-    width: 200px;
-    height: 1px;
-    border-top: 1px solid $aqua;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .form-fieldset {
     display: grid;
     grid-template-columns: 167px auto;
-    grid-row: auto;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .form-fieldset ul {
-    margin-top: -15px;
+    grid-template-rows: auto;
   }
 }
 
