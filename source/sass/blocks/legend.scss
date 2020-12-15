@@ -1,9 +1,32 @@
 .legend {
+  display: block;
   color: $aqua;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   box-sizing: border-box;
-  margin-bottom: 35px;
+  margin: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: 30px;
+    width: 200px;
+    height: 1px;
+    border-top: 1px solid $aqua;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 50px;
+  }
 }

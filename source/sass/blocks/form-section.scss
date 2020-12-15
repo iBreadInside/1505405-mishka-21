@@ -1,0 +1,31 @@
+@media (min-width: $tablet-width) {
+  .form-section {
+    padding-bottom: 50px;
+
+    &:nth-child(even) {
+      background-color: $smoke-white;
+    }
+
+    &--color {
+      padding-top: 50px;
+    }
+
+    &--personal {
+      padding-top: 67px;
+    }
+
+    &--contacts {
+      padding-top: 65px;
+    }
+
+    &--contacts fieldset:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &--comments {
+      padding-top: 69px;
+      margin-bottom: 53px;
+      padding-bottom: 0;
+    }
+  }
+}

@@ -16,6 +16,7 @@
 @media (min-width: $tablet-width) {
   .showcase-window {
     padding-top: 154px;
+    border-top: 1px solid $black-opacity10;
   }
 
   .showcase-window h1 {

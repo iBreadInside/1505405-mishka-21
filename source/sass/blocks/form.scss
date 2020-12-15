@@ -1,9 +1,23 @@
-.form fieldset {
-  border: 0;
-  border-top: 1px solid $aqua;
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__send {
   width: 100%;
   padding: 18px;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__send {
+    max-width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__send {
+    margin-left: 174px;
+  }
 }

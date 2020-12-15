@@ -1,0 +1,18 @@
+.form-fieldset {
+  position: relative;
+  border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-fieldset {
+    display: grid;
+    grid-template-columns: 167px auto;
+    grid-template-rows: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-fieldset {
+    grid-template-columns: 174px auto;
+  }
+}

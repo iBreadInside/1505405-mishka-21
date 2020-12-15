@@ -1,3 +1,13 @@
 .form-email__legend {
   margin-bottom: 20px;
+
+  &::after {
+    width: 182px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-email__legend {
+    margin-bottom: 0;
+  }
 }
