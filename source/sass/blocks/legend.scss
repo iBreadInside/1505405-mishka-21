@@ -1,10 +1,12 @@
 .legend {
+  display: block;
   color: $aqua;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   box-sizing: border-box;
+  margin: 0;
 
   &::after {
     position: absolute;
