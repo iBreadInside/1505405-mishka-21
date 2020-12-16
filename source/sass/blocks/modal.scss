@@ -1,4 +1,5 @@
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -8,11 +9,9 @@
   box-sizing: border-box;
   width: $mobile-width;
   height: 100%;
-  // display: flex;
   align-items: center;
   background-color: $white-opacity90;
   z-index: 2;
-  display: none;
 
 
   @media (min-width: $tablet-width) {
@@ -22,6 +21,10 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
+}
+
+.modal__show {
+  display: flex;
 }
 
 .modal__wrapper {
