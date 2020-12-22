@@ -83,8 +83,8 @@
 
   .about-us__list {
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 100px;
+    column-gap: 2px;
+    row-gap: 111px;
   }
 
   .about-us__item {
@@ -114,7 +114,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    margin-top: 66px;
+  }
+
   .about-us__wrapper {
     padding: 0 225px;
+  }
+
+  .about-us__item {
+    margin-right: 28px;
   }
 }

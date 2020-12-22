@@ -17,6 +17,14 @@
 .page-footer__developers {
   display: flex;
   align-items: center;
+
+  &:hover path {
+    fill: $aqua--darker-hover;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__developers b {
@@ -28,8 +36,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    padding-top: 51px;
-    padding-bottom: 58px;
+    padding-top: 43px;
+    padding-bottom: 48px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -37,5 +45,13 @@
 
   .page-footer__logo {
     display: block;
+
+    &:hover path {
+      fill: $aqua--darker-hover;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
   }
 }

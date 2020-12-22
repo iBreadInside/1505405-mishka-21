@@ -14,6 +14,7 @@
 }
 
 .showcase-catalog__item {
+  position: relative;
   background-color: $aqua;
   margin: 0;
   padding-top: 24px;
@@ -22,12 +23,35 @@
   display: block;
   box-sizing: border-box;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/index-interior.svg");
+    opacity: 0.5;
+  }
+
   &:active {
     background-color: $aqua--hover;
   }
 
+  &:active::after {
+    opacity: 0.3;
+  }
+
   &--darker {
     background-color: $aqua--darker;
+  }
+
+  &--darker::after {
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/index-toy.svg");
   }
 
   &--darker:active {
@@ -55,6 +79,29 @@
     display: block;
     box-sizing: border-box;
     flex-grow: 1;
+  }
+
+  .showcase-catalog__item {
+    min-height: 119px;
+    padding-top: 26px;
+    padding-left: 36px;
+
+    &::after {
+      top: 30px;
+    }
+
+    &:hover {
+      background-color: $aqua--hover;
+    }
+
+    &--darker::after {
+      top: 32px;
+      right: 33px;
+    }
+
+    &--darker:hover {
+      background-color: $aqua--darker-hover;
+    }
   }
 
   .showcase-catalog__item p {

@@ -19,6 +19,14 @@
 .social__link {
   display: block;
   padding: 10px;
+
+  &:hover path {
+    fill: $aqua--darker-hover;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
