@@ -4,7 +4,7 @@
 
 .page-footer__wrapper {
   padding-top: 15px;
-  padding-bottom: 32px;
+  padding-bottom: 21px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,7 @@
 .page-footer__developers {
   display: flex;
   align-items: center;
+  margin-top: 13px;
 
   &:hover path {
     fill: $aqua--darker-hover;
@@ -36,7 +37,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    padding-top: 43px;
+    padding-top: 44px;
     padding-bottom: 48px;
     flex-direction: row;
     justify-content: space-between;
@@ -53,5 +54,9 @@
     &:active path {
       opacity: 0.3;
     }
+  }
+
+  .page-footer__developers {
+    margin-top: 0;
   }
 }
