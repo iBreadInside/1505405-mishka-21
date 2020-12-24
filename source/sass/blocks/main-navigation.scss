@@ -1,24 +1,68 @@
-.main-navigation {
-  position: relative;
-}
-
 .main-navigation__logo {
   display: flex;
-  justify-content: center;
+  width: 86px;
+  height: 35px;
+  background: url("../img/mishka-logo-mobile.svg") no-repeat;
+  margin: 22px auto 21px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.main-navigation__logo img {
-  margin: 22px 0;
-}
-
-.main-navigation__toggle {
+.main-navigation--closed .main-navigation__toggle {
   position: absolute;
-  top: 32px;
-  right: 31px;
-  width: 20px;
-  height: 14px;
-  background: linear-gradient(to bottom, $black-color--darker 0, $black-color--darker 2px, transparent 2px, transparent 6px, $black-color--darker 6px, $black-color--darker 8px, transparent 8px, transparent 12px, $black-color--darker 12px, $black-color--darker 14px);
+  width: 30px;
+  height: 24px;
+  top: 6px;
+  right: 26px;
   border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    top: 5px;
+    right: 5px;
+    background: linear-gradient(to bottom, $black-color--darker 0, $black-color--darker 2px, transparent 2px, transparent 6px, $black-color--darker 6px, $black-color--darker 8px, transparent 8px, transparent 12px, $black-color--darker 12px, $black-color--darker 14px) 100% 100% no-repeat;
+    border: none;
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  position: absolute;
+  width: 31px;
+  height: 30px;
+  top: 2px;
+  right: 25px;
+  border: none;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 2px;
+    width: 27px;
+    height: 2px;
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-navigation__list {
@@ -27,11 +71,28 @@
   line-height: 24px;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid $black-opacity10;
+  box-sizing: border-box;
+}
+
+.main-navigation--closed .main-navigation__list {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__list {
+  display: flex;
 }
 
 .main-navigation__item {
-  border-bottom: 1px solid $smoke-white--light;
   position: relative;
+
+  &:not(:nth-child(4)) {
+    border-bottom: 1px solid $black-opacity10;
+  }
 
   &--new,
   &--sale {
@@ -44,14 +105,25 @@
 .main-navigation__item-link {
   position: relative;
   display: block;
-  padding: 29px 0 27px 76px;
+  padding: 29px 0 25px 76px;
+  width: 100%;
 
   &:hover p {
     opacity: 0.6;
   }
 
+  &:hover .main-navigation__icon-path {
+    opacity: 1;
+    fill: $aqua;
+  }
+
   &:active p {
     opacity: 0.3;
+  }
+
+  &:active .main-navigation__icon-path {
+    opacity: 0.3;
+    fill: $aqua;
   }
 }
 
@@ -75,7 +147,10 @@
   }
 
   .main-navigation__logo {
-    padding: 0 20px;
+    width: 113px;
+    height: 46px;
+    background: url("../img/mishka-logo-tablet.svg") no-repeat;
+    margin: 22px 18px;
   }
 
   .main-navigation__toggle {
@@ -91,7 +166,10 @@
   .main-navigation__item {
     font-size: 17px;
     line-height: 24px;
-    border: none;
+
+    &:not(:nth-child(4)) {
+      border: none;
+    }
 
     &--catalog {
       position: absolute;
@@ -113,6 +191,7 @@
   .main-navigation__item-link {
     padding: 33px;
     padding-left: 83px;
+    width: auto;
 
     &--search {
       border-right: 1px solid $black-opacity10;
@@ -126,12 +205,9 @@
       display: none;
     }
 
-    &--catalog {
-      padding: 10px;
-    }
-
+    &--catalog,
     &--form {
-      padding: 10px;
+      padding: 10px 12px;
     }
   }
 
@@ -152,7 +228,11 @@
 
   .main-navigation__logo {
     position: absolute;
-    left: 50%;
+    width: 149px;
+    height: 72px;
+    background: url("../img/mishka-logo-desktop.svg") no-repeat;
+    top: -10px;
+    left: 42%;
   }
 
   .main-navigation__item {
@@ -173,12 +253,12 @@
     &--sale {
       display: block;
       position: absolute;
-      top: 75px;
-      left: 17px;
+      top: 93px;
+      left: 37px;
     }
 
     &--sale {
-      left: 232px;
+      left: 255px;
     }
   }
 
@@ -189,12 +269,13 @@
     &--form,
     &--new,
     &--sale {
-      padding: 33px;
+      padding: 33px 35px;
     }
 
     &--new,
     &--sale {
       font-size: 15px;
+      padding: 15px;
     }
   }
 }

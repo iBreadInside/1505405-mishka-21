@@ -1,6 +1,10 @@
 .showcase-window {
   padding-top: 73px;
   background-color: $grey-color--background;
+  background-image: url("../img/index-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 19%;
+  border-top: 1px solid $smoke-white--light;
 }
 
 .showcase-window h1 {
@@ -17,13 +21,15 @@
   .showcase-window {
     padding-top: 154px;
     border-top: 1px solid $black-opacity10;
+    background-image: url("../img/index-desktop.jpg");
+    background-position: 50% 3%;
   }
 
   .showcase-window h1 {
     font-size: 43px;
     line-height: 50px;
     max-width: 500px;
-    padding-bottom: 372px;
+    padding-bottom: 369px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +37,7 @@
       font-size: 53px;
       line-height: 57px;
       max-width: 700px;
+      padding-bottom: 355px;
     }
   }
 }
