@@ -11,7 +11,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 6px;
+    top: 7px;
     right: 30px;
     width: 200px;
     height: 1px;
@@ -27,6 +27,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 50px;
+    margin-left: 61px;
   }
 }

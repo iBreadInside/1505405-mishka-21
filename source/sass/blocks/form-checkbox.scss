@@ -40,12 +40,12 @@
 .form-checkbox__item:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 7px;
-  width: 23px;
-  height: 16px;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 12px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
   transform: rotate(135deg);
 }
 
@@ -58,7 +58,7 @@
   .form-checkbox__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 24px;
+    gap: 23px;
   }
 
   .form-checkbox__list li {
@@ -79,8 +79,10 @@
   }
 
   .form-checkbox__item:checked + label::after {
-    top: 10px;
-    left: 14px;
+    top: 14px;
+    left: 12px;
+    width: 27px;
+    height: 15px;
   }
 }
 
@@ -88,5 +90,6 @@
   .form-checkbox__list {
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 100px;
+    column-gap: 15px;
   }
 }

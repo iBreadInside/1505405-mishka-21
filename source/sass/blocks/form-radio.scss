@@ -24,7 +24,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 3px;
     top: auto;
     width: 40px;
     height: 40px;
@@ -77,6 +77,6 @@
   .form-radio__item:checked + label::after {
     width: 21px;
     height: 21px;
-    left: 15px;
+    left: 17px;
   }
 }
