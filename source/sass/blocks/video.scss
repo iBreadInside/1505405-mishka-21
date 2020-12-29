@@ -55,10 +55,10 @@
 
 .video__block {
   position: relative;
+  line-height: 0;
 }
 
 .video__block video {
-  line-height: 0;
   object-fit: cover;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .video__description {
-  padding: 32px;
+  padding: 34px 32px;
   border: 1px solid $smoke-white--light;
   border-top: none;
 }
@@ -106,7 +106,7 @@
   .video__title-block {
     order: 0;
     justify-content: flex-start;
-    padding: 38px 41px 0;
+    padding: 39px 41px 0;
   }
 
   .video__title-block img {
@@ -144,7 +144,7 @@
 
 @media (min-width: $desktop-width) {
   .video {
-    margin-bottom: 100px;
+    margin-bottom: 103px;
   }
 
   .video__wrapper {
@@ -188,7 +188,7 @@
     flex-direction: column;
     justify-content: space-between;
     grid-column: 2/-1;
-    padding: 0 56px 64px 79px;
+    padding: 0 56px 60px 79px;
     border-left: none;
   }
 }
