@@ -10,13 +10,22 @@
   box-sizing: border-box;
   border: 2px solid $black-color;
   margin-bottom: 17px;
+  font-family: $font-default;
+  font-size: 17px;
+  line-height: 18px;
 
   &::placeholder {
-    font-family: $font-default;
-    font-size: 17px;
-    line-height: 18px;
     color: black;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $aqua--line;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $aqua--line;
   }
 }
 
@@ -41,10 +50,7 @@
   .form-comments__text {
     margin-bottom: 0;
     padding: 15px;
-
-    &::placeholder {
-      font-size: 19px;
-    }
+    font-size: 19px;
   }
 
   .form-comments__note {

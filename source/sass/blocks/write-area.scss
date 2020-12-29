@@ -7,27 +7,42 @@
   padding-bottom: 17px;
   margin-bottom: 35px;
   width: 100%;
+  font-size: 17px;
+  line-height: 18px;
 
   &::placeholder {
     font-family: $font-default;
-    font-size: 17px;
-    line-height: 18px;
     color: black;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $aqua--line;
+  }
+
+  &:hover + svg path {
+    opacity: 1;
+    fill: $aqua--line;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $aqua--line;
+  }
+
+  &:focus + svg path {
+    opacity: 1;
+    fill: $aqua--line;
   }
 }
 
 @media (min-width: $tablet-width) {
   .write-area {
     font-size: 19px;
+    padding-left: 18px;
+    padding-bottom: 15px;
     margin-bottom: 0;
     background-color: transparent;
-    padding-left: 18px;
-
-
-    &::placeholder {
-      font-size: 19px;
-    }
   }
 }
 

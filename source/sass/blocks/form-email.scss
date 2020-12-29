@@ -6,13 +6,26 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  // .form-email {
-  //   margin-bottom: 33px;
-  // }
+.form-email__icon {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+  transform: translate(0, -50%);
+}
 
+@media (min-width: $tablet-width) {
   .form-email__legend {
     margin-bottom: 0;
     margin-top: 5px;
+  }
+
+  .form-email__icon {
+    right: 7%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-email__icon {
+    right: 20%;
   }
 }

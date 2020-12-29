@@ -18,12 +18,21 @@
   padding-top: 17px;
   padding-bottom: 12px;
   width: 100%;
+  font-size: 17px;
+  line-height: 18px;
 
   &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
     color: black;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $aqua--line;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $aqua--line;
   }
 }
 
@@ -37,7 +46,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
 
     &:last-child {
       margin-bottom: 0;
@@ -48,13 +57,11 @@
     padding-top: 0;
     width: 375px;
     padding-left: 18px;
+    padding-bottom: 10px;
+    font-size: 19px;
 
     &--first-name {
       width: 428px;
-    }
-
-    &::placeholder {
-      font-size: 19px;
     }
   }
 }

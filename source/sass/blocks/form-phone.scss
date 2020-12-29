@@ -10,6 +10,13 @@
   }
 }
 
+.form-phone__icon {
+  position: absolute;
+  top: 45%;
+  right: 11%;
+  transform: translate(0, -50%);
+}
+
 @media (min-width: $tablet-width) {
   .form-phone {
     padding-top: 0;
@@ -17,6 +24,12 @@
 
   .form-phone__legend {
     margin: 0;
+    margin-top: 6px;
+  }
+
+  .form-phone__icon {
+    top: 34%;
+    right: 10%;
   }
 }
 
@@ -24,5 +37,11 @@
   .form-phone__legend {
     margin-top: 2px;
     margin-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-phone__icon {
+    right: 20%;
   }
 }

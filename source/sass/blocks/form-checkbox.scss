@@ -35,6 +35,15 @@
     background-position: 0 0;
     box-sizing: border-box;
   }
+
+  &:hover::before {
+    border-color: $aqua--line;
+  }
+
+  &:active::before {
+    border-color: $black-color;
+    opacity: 0.3;
+  }
 }
 
 .form-checkbox__item:checked + label::after {

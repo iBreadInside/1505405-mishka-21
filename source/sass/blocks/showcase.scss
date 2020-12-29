@@ -61,6 +61,11 @@
     line-height: 57px;
     padding-bottom: 105px;
     margin-bottom: 107px;
+
+    &::after {
+      height: 34px;
+      bottom: -8px;
+    }
   }
 
   .showcase__wrapper {

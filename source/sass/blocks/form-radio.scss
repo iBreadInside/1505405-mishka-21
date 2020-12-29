@@ -35,6 +35,15 @@
     background-position: 0 0;
     box-sizing: border-box;
   }
+
+  &:hover::before {
+    border-color: $aqua--line;
+  }
+
+  &:active::before {
+    border-color: $black-color;
+    opacity: 0.3;
+  }
 }
 
 .form-radio__item:checked + label::after {
@@ -45,7 +54,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: $aqua;
+  background-color: $aqua--line;
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
