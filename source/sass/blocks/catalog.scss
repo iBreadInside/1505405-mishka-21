@@ -21,11 +21,18 @@
 .catalog__item {
   display: flex;
   flex-direction: column;
+
+  &:hover .catalog__item-description {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .catalog__item-description {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog__item-description {
-  padding: 28px;
-  padding-bottom: 18px;
+  padding: 25px 27px 25px;
   border: 1px solid $smoke-white--light;
   box-sizing: border-box;
 }
@@ -34,12 +41,23 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__item-parameters {
   color: $black-color;
   font-size: 13px;
   line-height: 30px;
+  margin-bottom: 18px;
 }
 
 .catalog__item-price {
@@ -49,7 +67,7 @@
   line-height: 24px;
   border-top: 1px solid $smoke-white--light;
   box-sizing: border-box;
-  padding-top: 13px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,11 +75,20 @@
 
 .catalog__cart {
   border: none;
-  padding: 10px;
+  padding: 0;
+  margin-right: -6px;
+  width: 30px;
+  height: 29px;
   background-color: transparent;
 
-  :active .modal {
-    display: flex;
+  &:hover svg path {
+    opacity: 1;
+    fill: $aqua;
+  }
+
+  &:active svg path {
+    opacity: 0.3;
+    fill: $aqua;
   }
 }
 
@@ -71,15 +98,30 @@
   }
 
   .catalog h1 {
+    position: relative;
+    z-index: -1;
     font-size: 43px;
     line-height: 50px;
-    padding: 100px 0;
+    padding: 100px 0 85px;
     margin-bottom: 67px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 24px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-image: url("../img/zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
   }
 
   .catalog__list {
     margin-bottom: 0;
-    gap: 54px;
+    gap: 56px;
   }
 
   .catalog__item {
@@ -95,12 +137,13 @@
   .catalog__item-description {
     display: flex;
     flex-direction: column;
-    padding: 27px 34px;
+    padding: 27px 32px 20px;
   }
 
   .catalog__title {
     font-size: 20px;
     margin: 0;
+    margin-bottom: 7px;
   }
 
   .catalog__item-parameters {
@@ -121,7 +164,12 @@
   .catalog h1 {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 111px;
+    margin-bottom: 138px;
+
+    &::after {
+      height: 34px;
+      bottom: -27px;
+    }
   }
 
   .catalog__list {
@@ -141,6 +189,11 @@
 
   .catalog__item-description {
     flex-grow: 1;
+    padding: 27px 26px 20px;
+  }
+
+  .catalog__title {
+    margin: 0;
   }
 
   .catalog__item-parameters {
@@ -149,5 +202,10 @@
 
   .catalog__item-price {
     margin-top: auto;
+  }
+
+  .catalog__cart {
+    margin-right: -3px;
+    margin-top: 4px;
   }
 }

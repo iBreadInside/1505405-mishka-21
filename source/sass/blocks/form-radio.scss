@@ -24,7 +24,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 3px;
     top: auto;
     width: 40px;
     height: 40px;
@@ -35,17 +35,26 @@
     background-position: 0 0;
     box-sizing: border-box;
   }
+
+  &:hover::before {
+    border-color: $aqua--line;
+  }
+
+  &:active::before {
+    border-color: $black-color;
+    opacity: 0.3;
+  }
 }
 
 .form-radio__item:checked + label::after {
   content: "";
   position: absolute;
-  left: 12px;
+  left: 15px;
   top: auto;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: $aqua;
+  background-color: $aqua--line;
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
@@ -77,6 +86,6 @@
   .form-radio__item:checked + label::after {
     width: 21px;
     height: 21px;
-    left: 15px;
+    left: 17px;
   }
 }

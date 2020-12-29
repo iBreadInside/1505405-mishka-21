@@ -1,11 +1,21 @@
 .video {
-  margin-bottom: 58px;
+  margin-bottom: 57px;
 }
 
 .video__wrapper {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  width: $mobile-width--wrapper;
+  padding: 0;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__title-block {
@@ -18,16 +28,29 @@
   padding: 22px 34px 26px;
 }
 
-.video__title-block img {
-  margin-right: 25px;
+.video__title-block svg {
+  margin-right: 23px;
 }
 
 .video__title {
+  position: relative;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   display: inline-block;
   margin: 0;
+  padding-left: 56px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/video.svg");
+  }
 }
 
 .video__block {
@@ -51,7 +74,7 @@
 }
 
 .video__description {
-  padding: 33px;
+  padding: 32px;
   border: 1px solid $smoke-white--light;
   border-top: none;
 }
@@ -65,17 +88,25 @@
 .video__buy-button {
   display: block;
   box-sizing: border-box;
-  padding: 18px 11px;
+  padding: 16px 11px;
   text-align: center;
   font-size: 18px;
   line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
+  .video {
+    margin-bottom: 68px;
+  }
+
+  .video__wrapper {
+    width: $tablet-width--wrapper;
+  }
+
   .video__title-block {
     order: 0;
     justify-content: flex-start;
-    padding: 39px 42px 0;
+    padding: 38px 41px 0;
   }
 
   .video__title-block img {
@@ -84,6 +115,7 @@
 
   .video__title {
     font-size: 20px;
+    padding-left: 64px;
   }
 
   .video__block video {
@@ -101,6 +133,7 @@
 
   .video__description p {
     font-size: 15px;
+    line-height: 30px;
   }
 
   .video__buy-button {
@@ -110,7 +143,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .video {
+    margin-bottom: 100px;
+  }
+
   .video__wrapper {
+    width: $desktop-width--wrapper;
     display: grid;
     grid-template-columns: 683px auto;
     grid-template-rows: 172px auto;
@@ -133,6 +171,12 @@
 
   .video__title {
     max-width: 230px;
+    padding-left: 0;
+    padding-top: 47px;
+
+    &::before {
+      top: 8%;
+    }
   }
 
   .video__title-block img {
@@ -144,6 +188,6 @@
     flex-direction: column;
     justify-content: space-between;
     grid-column: 2/-1;
-    padding: 0 56px 60px 79px;
+    padding: 0 56px 64px 79px;
   }
 }

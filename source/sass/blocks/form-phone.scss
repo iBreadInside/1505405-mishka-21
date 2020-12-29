@@ -1,15 +1,47 @@
+.form-phone {
+  padding-top: 10px;
+}
+
 .form-phone__legend {
   margin-bottom: 19px;
+
+  &::after {
+    top: 18px;
+  }
+}
+
+.form-phone__icon {
+  position: absolute;
+  top: 45%;
+  right: 11%;
+  transform: translate(0, -50%);
 }
 
 @media (min-width: $tablet-width) {
+  .form-phone {
+    padding-top: 0;
+  }
+
   .form-phone__legend {
     margin: 0;
+    margin-top: 6px;
+  }
+
+  .form-phone__icon {
+    top: 34%;
+    right: 10%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-phone__legend {
-    margin-left: 50px;
+    margin-top: 2px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-phone__icon {
+    right: 20%;
   }
 }

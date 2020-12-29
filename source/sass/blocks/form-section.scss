@@ -1,6 +1,6 @@
 @media (min-width: $tablet-width) {
   .form-section {
-    padding-bottom: 50px;
+    padding-bottom: 16px;
 
     &:nth-child(even) {
       background-color: $smoke-white;
@@ -8,24 +8,35 @@
 
     &--color {
       padding-top: 50px;
+      padding-bottom: 51px;
     }
 
     &--personal {
       padding-top: 67px;
+      padding-bottom: 48px;
     }
 
     &--contacts {
-      padding-top: 65px;
+      padding-top: 59px;
+      padding-bottom: 50px;
     }
 
     &--contacts fieldset:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 33px;
     }
 
     &--comments {
-      padding-top: 69px;
+      padding-top: 50px;
       margin-bottom: 53px;
       padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-section {
+    &--comments {
+      margin-bottom: 47px;
     }
   }
 }

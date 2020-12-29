@@ -5,18 +5,27 @@
 .form-comments__text {
   resize: none;
   width: 100%;
-  padding: 17px;
+  padding: 14px;
   display: block;
   box-sizing: border-box;
   border: 2px solid $black-color;
   margin-bottom: 17px;
+  font-family: $font-default;
+  font-size: 17px;
+  line-height: 18px;
 
   &::placeholder {
-    font-family: $font-default;
-    font-size: 17px;
-    line-height: 18px;
     color: black;
     opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $aqua--line;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $aqua--line;
   }
 }
 
@@ -40,10 +49,8 @@
 
   .form-comments__text {
     margin-bottom: 0;
-
-    &::placeholder {
-      font-size: 19px;
-    }
+    padding: 15px;
+    font-size: 19px;
   }
 
   .form-comments__note {
@@ -63,5 +70,6 @@
 
   .form-comments__note {
     right: 224px;
+    bottom: -89px;
   }
 }
