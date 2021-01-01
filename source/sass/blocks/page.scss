@@ -14,3 +14,9 @@
     min-width: $tablet-width;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    min-width: $desktop-width;
+  }
+}

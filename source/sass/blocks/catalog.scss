@@ -121,7 +121,7 @@
 
   .catalog__list {
     margin-bottom: 0;
-    gap: 56px;
+    gap: 54px;
   }
 
   .catalog__item {
@@ -129,10 +129,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .catalog__img {
-    width: 334px;
-    height: 332px;
-  }
+  // .catalog__img {
+  //   width: 334px;
+  //   height: 332px;
+  // }
 
   .catalog__item-description {
     display: flex;
@@ -182,10 +182,10 @@
     flex-direction: column;
   }
 
-  .catalog__img {
-    width: 316px;
-    height: 462px;
-  }
+  // .catalog__img {
+  //   width: 316px;
+  //   height: 462px;
+  // }
 
   .catalog__item-description {
     flex-grow: 1;
