@@ -2,7 +2,7 @@
   display: flex;
   width: 86px;
   height: 35px;
-  background: url("../img/mishka-logo-mobile.svg") no-repeat;
+  background: url("/img/mishka-logo-mobile.svg") no-repeat;
   margin: 22px auto 21px;
 
   &:hover {
@@ -148,7 +148,7 @@
   .main-navigation__logo {
     width: 113px;
     height: 46px;
-    background: url("../img/mishka-logo-tablet.svg") no-repeat;
+    background: url("/img/mishka-logo-tablet.svg") no-repeat;
     margin: 22px 18px;
   }
 
@@ -229,7 +229,7 @@
     position: absolute;
     width: 149px;
     height: 72px;
-    background: url("../img/mishka-logo-desktop.svg") no-repeat;
+    background: url("/img/mishka-logo-desktop.svg") no-repeat;
     top: -10px;
     left: 42%;
   }

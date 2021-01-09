@@ -10,9 +10,9 @@
     bottom: -9px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("../img/zigzag-line.svg");
+    background-image: url("/img/zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: cover;
+    background-size: contain;
   }
 }
 
@@ -65,7 +65,7 @@
   display: block;
   width: 100%;
   min-height: 52px;
-  background-image: url("../img/index-arrow-left.svg");
+  background-image: url("/img/index-arrow-left.svg");
   background-repeat: no-repeat;
   background-position: 48% 58%;
 
@@ -111,11 +111,12 @@
       height: 457px;
       left: 0;
       bottom: -48px;
-      background-image: url("../img/review.jpg");
+      background-image: url("/img/review.jpg");
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/review@2x.jpg");
+        background-image: url("/img/review@2x.jpg");
+        background-size: 350px auto;
       }
     }
   }
@@ -174,7 +175,6 @@
       width: $desktop-width--wrapper;
       height: 23px;
       bottom: -12px;
-      background-size: contain;
     }
   }
 
