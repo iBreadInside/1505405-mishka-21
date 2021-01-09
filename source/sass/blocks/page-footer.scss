@@ -17,13 +17,17 @@
 .page-footer__developers {
   display: flex;
   align-items: center;
-  margin-top: 13px;
+  margin-top: 11px;
 
-  &:hover path {
+  svg {
+    fill: $aqua;
+  }
+
+  &:hover svg {
     fill: $aqua--darker-hover;
   }
 
-  &:active path {
+  &:active svg {
     opacity: 0.3;
   }
 }
@@ -32,7 +36,7 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
-  margin-right: 28px;
+  margin-right: 27px;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,11 +51,11 @@
   .page-footer__logo {
     display: block;
 
-    &:hover path {
+    &:hover svg {
       fill: $aqua--darker-hover;
     }
 
-    &:active path {
+    &:active svg {
       opacity: 0.3;
     }
   }

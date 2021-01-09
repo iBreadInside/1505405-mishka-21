@@ -2,7 +2,6 @@
   display: flex;
   width: 86px;
   height: 35px;
-  background: url("/img/mishka-logo-mobile.svg") no-repeat;
   margin: 22px auto 21px;
 
   &:hover {
@@ -107,11 +106,15 @@
   display: block;
   padding: 29px 0 25px 76px;
 
+  .main-navigation__item-icon {
+    opacity: 0.2;
+  }
+
   &:hover p {
     opacity: 0.6;
   }
 
-  &:hover .main-navigation__icon-path {
+  &:hover svg {
     opacity: 1;
     fill: $aqua;
   }
@@ -120,7 +123,7 @@
     opacity: 0.3;
   }
 
-  &:active .main-navigation__icon-path {
+  &:active svg {
     opacity: 0.3;
     fill: $aqua;
   }
@@ -148,8 +151,12 @@
   .main-navigation__logo {
     width: 113px;
     height: 46px;
-    background: url("/img/mishka-logo-tablet.svg") no-repeat;
     margin: 22px 18px;
+  }
+
+  .main-navigation__logo img {
+    width: 100%;
+    height: 100%;
   }
 
   .main-navigation__toggle {
@@ -229,9 +236,13 @@
     position: absolute;
     width: 149px;
     height: 72px;
-    background: url("/img/mishka-logo-desktop.svg") no-repeat;
     top: -10px;
     left: 42%;
+  }
+
+  .main-navigation__logo img {
+    width: 100%;
+    height: 100%;
   }
 
   .main-navigation__item {

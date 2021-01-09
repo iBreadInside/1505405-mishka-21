@@ -20,11 +20,11 @@
   display: block;
   padding: 10px;
 
-  &:hover path {
+  &:hover svg {
     fill: $aqua--darker-hover;
   }
 
-  &:active path {
+  &:active svg {
     opacity: 0.3;
   }
 }
