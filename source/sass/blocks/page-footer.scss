@@ -17,7 +17,7 @@
 .page-footer__developers {
   display: flex;
   align-items: center;
-  margin-top: 11px;
+  margin-top: 8px;
 
   svg {
     fill: $aqua;
@@ -36,12 +36,12 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
-  margin-right: 27px;
+  margin-right: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    padding-top: 44px;
+    padding-top: 40px;
     padding-bottom: 48px;
     flex-direction: row;
     justify-content: space-between;
@@ -62,5 +62,11 @@
 
   .page-footer__developers {
     margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding-top: 44px;
   }
 }
