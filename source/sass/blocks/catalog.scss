@@ -81,12 +81,16 @@
   height: 29px;
   background-color: transparent;
 
-  &:hover svg path {
+  svg {
+    opacity: 0.2;
+  }
+
+  &:hover svg {
     opacity: 1;
     fill: $aqua;
   }
 
-  &:active svg path {
+  &:active svg {
     opacity: 0.3;
     fill: $aqua;
   }

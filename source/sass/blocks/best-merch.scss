@@ -13,7 +13,7 @@
     transform: translate(-50%, 0);
     background-image: url("/img/zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: cover;
+    background-size: contain;
   }
 }
 
@@ -149,7 +149,6 @@
     &::after {
       width: $desktop-width--wrapper;
       height: 23px;
-      background-size: contain;
     }
   }
 

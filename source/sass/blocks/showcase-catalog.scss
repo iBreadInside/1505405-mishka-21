@@ -23,22 +23,19 @@
   display: block;
   box-sizing: border-box;
 
-  &::after {
+  svg {
     position: absolute;
-    content: "";
     top: 23px;
     right: 36px;
-    width: 40px;
-    height: 62px;
-    background-image: url("/img/index-interior.svg");
     opacity: 0.5;
+    fill: $blue-chill;
   }
 
   &:active {
     background-color: $aqua--hover;
   }
 
-  &:active::after {
+  &:active svg {
     opacity: 0.3;
   }
 
@@ -46,12 +43,9 @@
     background-color: $aqua--darker;
   }
 
-  &--darker::after {
+  &--darker svg {
     top: 21px;
     right: 27px;
-    width: 60px;
-    height: 60px;
-    background-image: url("/img/index-toy.svg");
   }
 
   &--darker:active {
@@ -103,7 +97,7 @@
     padding-top: 26px;
     padding-left: 36px;
 
-    &::after {
+    svg {
       top: 30px;
     }
 
@@ -112,7 +106,7 @@
       margin-top: -5px;
     }
 
-    &--darker::after {
+    &--darker svg {
       top: 32px;
       right: 33px;
     }
