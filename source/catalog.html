@@ -370,10 +370,43 @@
         </div>
       </div>
     </footer>
-    <!-- Скрипт для навигации -->
+    <!-- Модальные окна -->
+    <section class="modal modal--cart">
+      <div class="modal__wrapper wrapper">
+        <h3>Добавить в корзину</h3>
+        <p>Выберите размер</p>
+        <form class="cart-form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="cart-form__sizes sizes-checkbox">
+            <ul class="cart-form__size-list">
+              <li class="cart-form__item">
+                <input class="visually-hidden cart-form__input" type="checkbox" name="S" id="size-S" checked>
+                <label class="cart-form__item-label" for="size-S">S</label>
+              </li>
+              <li class="cart-form__item">
+                <input class="visually-hidden cart-form__input" type="checkbox" name="M" id="size-M">
+                <label class="cart-form__item-label" for="size-M">M</label>
+              </li>
+              <li class="cart-form__item">
+                <input class="visually-hidden cart-form__input" type="checkbox" name="L" id="size-L">
+                <label class="cart-form__item-label" for="size-L">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="cart-form__add" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
+    <!-- Скрипты -->
     <script>
-      var navMain = document.querySelector('.main-navigation');
-      var navToggle = document.querySelector('.main-navigation__toggle');
+      const navMain = document.querySelector('.main-navigation');
+      const navToggle = document.querySelector('.main-navigation__toggle');
+      const buy = document.querySelector('.best-merch__buy');
+      const modal = document.querySelector('.modal');
+      const cartAdd = document.querySelector('.cart-form__add');
+      const cartBtns = Array.from(document.querySelectorAll('.catalog__cart'));
+      console.log(cartAdd);
+      console.log(cartBtns);
+      console.log(modal);
 
       navMain.classList.remove('main-navigation--nojs');
 
@@ -386,30 +419,25 @@
           navMain.classList.remove('main-navigation--opened');
         }
       });
+
+      // Скрипт для модального окна
+      if (buy) {
+        buy.addEventListener('click', function(evt) {
+          evt.preventDefault();
+          modal.classList.add('modal__show');
+        });
+      };
+
+      cartBtns.forEach(cartElement => {
+        cartElement.addEventListener('click', function(evt) {
+          evt.preventDefault();
+          modal.classList.add('modal__show');
+        })
+      });
+
+      // cartAdd.addEventListener('click', function(evt) {
+      //   modal.classList.remove('modal__show');
+      // });
     </script>
-    <!-- Модальные окна -->
-    <section class="modal modal--cart">
-      <h3>Добавить в корзину</h3>
-      <p>Выберите размер</p>
-      <form class="cart-form" method="GET" action="https://echo.htmlacademy.ru">
-        <fieldset class="cart-form__sizes sizes-checkbox">
-          <ul class="cart-form__size-list">
-            <li class="cart-form__item">
-              <input class="visually-hidden" type="checkbox" name="S" id="size-S" checked>
-              <label class="cart-form__item-label" for="size-S">S</label>
-            </li>
-            <li class="cart-form__item">
-              <input class="visually-hidden" type="checkbox" name="M" id="size-M">
-              <label class="cart-form__item-label" for="size-M">M</label>
-            </li>
-            <li class="cart-form__item">
-              <input class="visually-hidden" type="checkbox" name="L" id="size-L">
-              <label class="cart-form__item-label" for="size-L">L</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="cart-form__add" type="submit">Добавить</button>
-      </form>
-    </section>
   </body>
 </html>
