@@ -460,7 +460,10 @@
       const buy = document.querySelector('.best-merch__buy');
       const modal = document.querySelector('.modal');
       const cartAdd = document.querySelector('.cart-form__add');
-      const cartBtns = document.querySelector('.catalog__cart');
+      const cartBtns = Array.from(document.querySelectorAll('.catalog__cart'));
+      console.log(cartAdd);
+      console.log(cartBtns);
+      console.log(modal);
 
       navMain.classList.remove('main-navigation--nojs');
 
@@ -475,15 +478,19 @@
       });
 
       // Скрипт для модального окна
-      buy.addEventListener('click', function(evt) {
-        evt.preventDefault();
-        modal.classList.add('modal__show');
-      });
+      if (buy) {
+        buy.addEventListener('click', function(evt) {
+          evt.preventDefault();
+          modal.classList.add('modal__show');
+        });
+      };
 
-      // cartBtns.addEventListener('click', function(evt) {
-      //   evt.preventDefault();
-      //   modal.classList.add('modal__show');
-      // });
+      cartBtns.forEach(cartElement => {
+        cartElement.addEventListener('click', function(evt) {
+          evt.preventDefault();
+          modal.classList.add('modal__show');
+        })
+      });
 
       // cartAdd.addEventListener('click', function(evt) {
       //   modal.classList.remove('modal__show');
