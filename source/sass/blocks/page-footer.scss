@@ -17,13 +17,17 @@
 .page-footer__developers {
   display: flex;
   align-items: center;
-  margin-top: 13px;
+  margin-top: 8px;
 
-  &:hover path {
+  svg {
+    fill: $aqua;
+  }
+
+  &:hover svg {
     fill: $aqua--darker-hover;
   }
 
-  &:active path {
+  &:active svg {
     opacity: 0.3;
   }
 }
@@ -32,12 +36,12 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
-  margin-right: 28px;
+  margin-right: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    padding-top: 44px;
+    padding-top: 40px;
     padding-bottom: 48px;
     flex-direction: row;
     justify-content: space-between;
@@ -47,16 +51,22 @@
   .page-footer__logo {
     display: block;
 
-    &:hover path {
+    &:hover svg {
       fill: $aqua--darker-hover;
     }
 
-    &:active path {
+    &:active svg {
       opacity: 0.3;
     }
   }
 
   .page-footer__developers {
     margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding-top: 44px;
   }
 }

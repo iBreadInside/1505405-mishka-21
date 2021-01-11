@@ -18,56 +18,36 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/index-eco-icon.svg");
-    background-repeat: no-repeat;
-    top: -55px;
-    left: 8px;
-    width: 33px;
-    height: 38px;
-  }
+.about-us__item .about-us__item-icon {
+  position: absolute;
+  top: -55px;
+  left: 8px;
 
-  &--nordic::before {
-    background-image: url("../img/index-nordic-icon.svg");
+  &--nordic {
     top: -54px;
     left: 0;
-    width: 47px;
-    height: 27px;
   }
 
-  &--likes::before {
-    background-image: url("../img/index-likes-icon.svg");
+  &--likes {
     top: -49px;
     left: 7px;
-    width: 34px;
-    height: 27px;
   }
 
-  &--with-love::before {
-    background-image: url("../img/index-withlove-icon.svg");
+  &--with-love {
     top: -52px;
     left: 3px;
-    width: 35px;
-    height: 34px;
   }
 
-  &--support::before {
-    background-image: url("../img/index-support-icon.svg");
+  &--support {
     top: -51px;
     left: -6px;
-    width: 55px;
-    height: 23px;
   }
 
-  &--giftbox::before {
-    background-image: url("../img/index-giftbox-icon.svg");
+  &--giftbox {
     top: -53px;
     left: 3px;
-    width: 33px;
-    height: 32px;
   }
 }
 

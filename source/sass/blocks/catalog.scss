@@ -81,12 +81,16 @@
   height: 29px;
   background-color: transparent;
 
-  &:hover svg path {
+  svg {
+    opacity: 0.2;
+  }
+
+  &:hover svg {
     opacity: 1;
     fill: $aqua;
   }
 
-  &:active svg path {
+  &:active svg {
     opacity: 0.3;
     fill: $aqua;
   }
@@ -113,7 +117,7 @@
       bottom: 0;
       left: 50%;
       transform: translate(-50%, 0);
-      background-image: url("../img/zigzag-fill.svg");
+      background-image: url("/img/zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: contain;
     }
@@ -121,17 +125,12 @@
 
   .catalog__list {
     margin-bottom: 0;
-    gap: 56px;
+    gap: 54px;
   }
 
   .catalog__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .catalog__img {
-    width: 334px;
-    height: 332px;
   }
 
   .catalog__item-description {
@@ -180,11 +179,6 @@
   .catalog__item {
     display: flex;
     flex-direction: column;
-  }
-
-  .catalog__img {
-    width: 316px;
-    height: 462px;
   }
 
   .catalog__item-description {

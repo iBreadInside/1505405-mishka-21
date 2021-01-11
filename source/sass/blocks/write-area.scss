@@ -20,7 +20,7 @@
     border-color: $aqua--line;
   }
 
-  &:hover + svg path {
+  &:hover + svg {
     opacity: 1;
     fill: $aqua--line;
   }
@@ -30,7 +30,7 @@
     border-color: $aqua--line;
   }
 
-  &:focus + svg path {
+  &:focus + svg {
     opacity: 1;
     fill: $aqua--line;
   }
