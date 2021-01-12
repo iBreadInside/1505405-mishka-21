@@ -12,8 +12,8 @@
     }
 
     &--personal {
-      padding-top: 67px;
-      padding-bottom: 48px;
+      padding-top: 65px;
+      padding-bottom: 52px;
     }
 
     &--contacts {
@@ -37,6 +37,11 @@
   .form-section {
     &--comments {
       margin-bottom: 47px;
+    }
+
+    &--personal {
+      padding-top: 63px;
+      padding-bottom: 50px;
     }
   }
 }
