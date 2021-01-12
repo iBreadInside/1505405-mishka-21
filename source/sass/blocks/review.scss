@@ -109,11 +109,11 @@
       height: 457px;
       left: 0;
       bottom: -48px;
-      background-image: url("/img/review.jpg");
+      background-image: url("../img/review.jpg");
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("/img/review@2x.jpg");
+        background-image: url("../img/review@2x.jpg");
         background-size: 350px auto;
       }
     }

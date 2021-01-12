@@ -1,13 +1,13 @@
 .showcase-window {
   padding-top: 73px;
   background-color: $grey-color--background;
-  background-image: url("/img/index-mobile.jpg");
+  background-image: url("../img/index-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 19%;
   border-top: 1px solid $smoke-white--light;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/index-mobile@2x.jpg");
+    background-image: url("../img/index-mobile@2x.jpg");
     background-size: 320px auto;
   }
 }
@@ -26,11 +26,11 @@
   .showcase-window {
     padding-top: 154px;
     border-top: 1px solid $black-opacity10;
-    background-image: url("/img/index-desktop.jpg");
+    background-image: url("../img/index-desktop.jpg");
     background-position: 50% 3%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/index-desktop@2x.jpg");
+      background-image: url("../img/index-desktop@2x.jpg");
       background-size: 1150px auto;
     }
   }
