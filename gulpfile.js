@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
+const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -22,11 +23,19 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe("build")
+}
 
 // Images
 
@@ -47,7 +56,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
@@ -58,7 +67,7 @@ const sprite = () => {
   return gulp.src("source/img/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -89,3 +98,13 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// Build
+
+const build = gulp.series(
+  styles,
+  html,
+  sprite,
+  images,
+  createWebp
+)
