@@ -23,7 +23,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
@@ -56,7 +56,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.createWebp = createWebp;
@@ -67,7 +67,7 @@ const sprite = () => {
   return gulp.src("source/img/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.sprite = sprite;
@@ -77,7 +77,7 @@ exports.sprite = sprite;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
@@ -101,12 +101,10 @@ exports.default = gulp.series(
 
 // Build
 
-const build = gulp.series(
-  styles,
-  html,
-  sprite,
-  images,
-  createWebp
-)
-
-exports.build = build;
+// const build = gulp.series(
+//   styles,
+//   html,
+//   sprite,
+//   images,
+//   createWebp
+// )
