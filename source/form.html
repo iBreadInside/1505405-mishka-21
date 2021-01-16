@@ -282,11 +282,11 @@
               <ul class="form-name__list">
                 <li>
                   <label class="form-name__item-label form-label" for="first-name">Имя:</label>
-                  <input class="form-name__item form-name__item--first-name" type="text" id="first-name" placeholder="Введите ваше имя*">
+                  <input class="form-name__item form-name__item--first-name" type="text" id="first-name" placeholder="Введите ваше имя*" required>
                 </li>
                 <li>
                   <label class="form-name__item-label form-label" for="second-name">Фамилия:</label>
-                  <input class="form-name__item form-name__item--second-name" type="text" id="second-name" placeholder="Укажите фамилию*">
+                  <input class="form-name__item form-name__item--second-name" type="text" id="second-name" placeholder="Укажите фамилию*" required>
                 </li>
                 <li>
                   <label class="form-name__item-label form-label" for="middle-name">Отчество:</label>
@@ -299,14 +299,14 @@
             <!-- Блок контактов заказчика -->
             <fieldset class="form-phone form-fieldset wrapper">
               <h2 class="form-phone__legend legend">Тел</h2>
-              <input class="form-phone__write-area write-area" type="tel" id="your-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Укажите номер вашего телефона">
+              <input class="form-phone__write-area write-area" type="tel" id="your-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" aria-label="Укажите номер вашего телефона" required>
               <svg class="form-phone__icon" width="25" height="24">
                 <use xlink:href="#phone"></use>
               </svg>
             </fieldset>
             <fieldset class="form-email form-fieldset wrapper">
               <h2 class="form-email__legend legend">E-mail</h2>
-              <input class="form-email__write-area write-area" type="email" id="your-email" placeholder="Ваш Email*" aria-label="Укажите">
+              <input class="form-email__write-area write-area" type="email" id="your-email" placeholder="Ваш Email*" aria-label="Укажите" required>
               <svg class="form-email__icon" width="32" height="21">
                 <use xlink:href="#mail"></use>
               </svg>
