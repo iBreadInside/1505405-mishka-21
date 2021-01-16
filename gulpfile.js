@@ -85,6 +85,7 @@ const sprite = () => {
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -93,10 +94,8 @@ exports.sprite = sprite;
 
 const copy = (done) => {
   gulp.src([
-    // "source/css/*.{css,map}",
     "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/*.{jpg,png,svg}"
+    "source/*.ico"
   ], {
     base: "source"
   })
@@ -169,12 +168,14 @@ exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
-    html,
-    sprite,
-    copy,
+    html
+  ),
+  copy,
+  gulp.parallel(
     images,
     createWebp
   ),
+  sprite,
   gulp.series(
     server, watcher
   )
