@@ -146,6 +146,10 @@
     padding-right: 18px;
   }
 
+  .main-navigation--closed .main-navigation__list {
+    display: flex;
+  }
+
   .main-navigation__logo {
     width: 113px;
     height: 46px;
