@@ -88,8 +88,11 @@
 
 .main-navigation__item {
   position: relative;
-  border-bottom: 1px solid $black-opacity10;
   box-sizing: border-box;
+
+  &:not(:nth-child(4)) {
+    border-bottom: 1px solid $black-opacity10;
+  }
 
   &--new,
   &--sale {
@@ -175,7 +178,10 @@
   .main-navigation__item {
     font-size: 17px;
     line-height: 24px;
-    border: none;
+
+    &:not(:nth-child(4)) {
+      border: none;
+    }
 
     &--catalog {
       position: absolute;

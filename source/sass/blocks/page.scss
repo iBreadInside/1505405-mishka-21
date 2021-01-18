@@ -9,13 +9,13 @@
   background-color: white;
 }
 
+.page-main {
+  border-top: 1px solid $black-opacity10;
+}
+
 @media (min-width: $tablet-width) {
   .page__body {
     min-width: $tablet-width;
-  }
-
-  .page-main {
-    border-top: 1px solid $black-opacity10;
   }
 }
 
