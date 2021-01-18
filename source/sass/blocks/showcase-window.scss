@@ -4,7 +4,7 @@
   background-image: url("../img/index-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 19%;
-  border-top: 1px solid $smoke-white--light;
+  // border-top: 1px solid $smoke-white--light;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index-mobile@2x.jpg");
@@ -25,7 +25,7 @@
 @media (min-width: $tablet-width) {
   .showcase-window {
     padding-top: 154px;
-    border-top: 1px solid $black-opacity10;
+    // border-top: 1px solid $black-opacity10;
     background-image: url("../img/index-desktop.jpg");
     background-position: 50% 3%;
 

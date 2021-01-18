@@ -5,7 +5,7 @@
   &::after {
     position: absolute;
     content: "";
-    width: 100%;
+    width: $mobile-width;
     height: 6px;
     bottom: -9px;
     left: 50%;
@@ -93,6 +93,7 @@
     padding-bottom: 134px;
 
     &::after {
+      width: $tablet-width;
       height: 17px;
     }
   }
