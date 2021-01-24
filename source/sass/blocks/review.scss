@@ -26,6 +26,12 @@
   margin-bottom: 14px;
 }
 
+.review__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .review__item blockquote {
   color: $black-color;
   font-size: 15px;

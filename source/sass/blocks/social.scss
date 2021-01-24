@@ -4,12 +4,15 @@
 
 .social__list {
   width: $mobile-width--wrapper;
+  padding: 0;
   padding-bottom: 14px;
   border-bottom: 1px solid $gainsboro;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  list-style: none;
+  margin: 0;
 }
 
 .social__list li:not(:last-child) {

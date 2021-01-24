@@ -4,12 +4,17 @@
 
 .cart-form__sizes {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .cart-form__size-list {
   display: flex;
+  list-style: none;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   margin-bottom: 31px;
   width: 100%;
 }
